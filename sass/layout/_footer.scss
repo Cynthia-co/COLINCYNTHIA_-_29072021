@@ -2,11 +2,10 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    color: $footer_colortxt;
     font-family: $font-texte;
     background-color: $footer-backgroundcolor;
-    & h1{
-        font-family: $font-logo;
+    & #footer-logo{
+        @include font-logo ;
         color:$footer_colortxt;
     }
 }

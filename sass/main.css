@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand";
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-family: "Roboto";
+  background-color: #040404;
+}
+footer #footer-logo {
+  font-family: "Shrikhand";
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
