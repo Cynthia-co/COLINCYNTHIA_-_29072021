@@ -4,8 +4,9 @@ footer{
     padding: 5px;
     font-family: $font-texte;
     background-color: $footer-backgroundcolor;
-    & #footer-logo{
+    
+} 
+#footer-logo{
         @include font-logo ;
         color:$footer_colortxt;
     }
-}
