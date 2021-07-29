@@ -1,10 +1,7 @@
-$footer_colortxt: #fff;
-$footer_backgroundcolor: rgb(4, 4, 4);
-$font_txt: @font-face {
-  font-family: "Roboto";
-  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
-};
-$font_logo: @font-face {
-  font-family: "Shrikhand";
-  src: url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-};
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$footer-colortxt: #fff;
+$footer-backgroundcolor: rgb(4, 4, 4);
+$font-logo:"Shrikhand";
+$font-texte:"Roboto";
