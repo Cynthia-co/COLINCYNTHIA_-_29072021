@@ -1,0 +1,10 @@
+@mixin font_txt: @font-face {
+    font-family: "Roboto";
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+  }
+
+  @mixin font_logo: @font-face {
+    font-family: "Shrikhand";
+    src: url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+  }
+  

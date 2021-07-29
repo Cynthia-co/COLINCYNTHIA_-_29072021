@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: $footer_colortxt;
+    font-family: $font_txt;
+    background-color: $footer_backgroundcolor;
+    &__h1{
+        font-family: $font_logo;
+    }
+}
