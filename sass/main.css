@@ -1,4 +1,4 @@
-header {
+header h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand";
@@ -11,7 +11,13 @@ footer {
   font-family: "Roboto";
   background-color: #040404;
 }
-footer #footer-logo {
-  font-family: "Shrikhand";
+
+#footer-logo {
   color: #fff;
+}
+@font-face {
+  #footer-logo {
+    font-family: "Shrikhand";
+    src: url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+  }
 }/*# sourceMappingURL=main.css.map */
