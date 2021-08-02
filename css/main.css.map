@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sass/layout/_header.scss","../sass/Utils/_variables.scss","../sass/main.scss","../sass/layout/_footer.scss","../sass/Utils/_mixins.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,uBAAA;EACA,wBCDQ;ACDZ;;ACDA;EACI,aAAA;EACA,sBAAA;EACA,YAAA;EACA,qBFDS;EEET,yBFJqB;ACQzB;;ACDA;EAEQ,WFVU;ACalB;AEToB;EDIpB;ICHG,iCAAA;IACA,yEAAA;EFYD;AACF","file":"main.css"}
