@@ -1,0 +1,23 @@
+@import "../Utils/variables";
+
+body{
+    font-family: "Roboto";
+}
+
+h1,h2{
+    font-family: "Shrikhand";
+}
+
+h5{
+    font-weight: bold;
+}
+
+title-menu{
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-tertiary; 
+    
+}
+
+footer{
+    color: $color-footer;
+}

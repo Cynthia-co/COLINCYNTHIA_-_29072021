@@ -1,3 +1,5 @@
+@import "../components/buttons";
+
 .img-menu{
     @extend %img-menu;
     position:relative;
@@ -5,7 +7,7 @@
 }
 
 .btn-color{
-    @extend %btn-color;
+    
     display: flex;
     justify-content: center;
     align-items: center;

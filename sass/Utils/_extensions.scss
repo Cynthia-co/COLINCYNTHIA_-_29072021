@@ -32,14 +32,6 @@
     object-fit: cover;
 }
 
-%btn-color{
-    width: 300px;
-    height: 60px;
-    background-color: $color-primary;
-    border-radius: 50px;
-    font: $footer-font;
-}
-
 %title-menu{
     text-transform: uppercase;
     border-bottom: 2px solid $color-tertiary; 

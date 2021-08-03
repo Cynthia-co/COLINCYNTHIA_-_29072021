@@ -1,5 +1,7 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+@import "../Utils/extensions";
+@import "../components/buttons";
 
 a{
   text-decoration: none;
@@ -19,9 +21,6 @@ a{
     background-color:$color-background1;
     font: $font-h2;
     @extend %barre;
-    .btn-color{
-      @extend %btn-color;
-    }
   }
 }
 fas {

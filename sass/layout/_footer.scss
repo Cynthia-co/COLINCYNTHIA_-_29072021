@@ -4,14 +4,20 @@
 footer{
     display: flex;
     flex-direction: column;
-    padding: 5px; 
+    padding: 5px;
     background-color: $footer-backgroundcolor;
     justify-content: center;
-    // #footer-logo{
-    //     font: $logo #fff;
-    // }
+    margin: 2px;
+    h1{
+        font-size: small;
+    }
     p{
-        font: #fff;
+        color: $color-footer;
+        margin: 5px;
+        
+    }
+    .fas{
+        padding-right: 2px;
     }
 }
  
