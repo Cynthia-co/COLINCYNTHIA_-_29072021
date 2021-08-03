@@ -1,5 +1,7 @@
 .img-menu{
     @extend %img-menu;
+    position:relative;
+    z-index: -1;
 }
 
 .btn-color{
@@ -8,4 +10,14 @@
     justify-content: center;
     align-items: center;
     
+}
+
+h4{
+    @extend %title-menu;
+}
+
+.title-restaurant{
+    position: absolute;
+    @extend %title-restaurant;
+    z-index: 2;
 }
