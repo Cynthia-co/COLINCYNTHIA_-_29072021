@@ -1,0 +1,11 @@
+.img-menu{
+    @extend %img-menu;
+}
+
+.btn-color{
+    @extend %btn-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

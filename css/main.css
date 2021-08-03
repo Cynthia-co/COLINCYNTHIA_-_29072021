@@ -1,23 +1,124 @@
-header h1 {
+#noustrouver #explorer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  text-align: center;
+}
+
+#Fonctionnement button {
+  width: 330px;
+  height: 54px;
+  background-color: #e9e9e9;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+}
+
+#Restaurants figure {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  background-color: white;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 465px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-color, #noustrouver #explorer .btn-color {
+  width: 300px;
+  height: 60px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  font: "Roboto" #fff;
+}
+
+header {
+  background-color: white;
+  border-bottom: 2px;
+  box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.712);
+  max-width: 150%;
+}
+header figure {
   display: flex;
   justify-content: center;
-  font-family: "Shrikhand";
+  align-content: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  font-family: "Roboto";
-  background-color: #040404;
+  background-color: #333333;
+  justify-content: center;
+}
+footer p {
+  font: #fff;
 }
 
-#footer-logo {
-  color: #fff;
+a {
+  text-decoration: none;
+  color: black;
 }
-@font-face {
-  #footer-logo {
-    font-family: "Shrikhand", cursive;
-    src: url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-  }
+
+#noustrouver {
+  display: flex;
+  flex-direction: column;
+}
+#noustrouver #localisation {
+  display: flex;
+  background-color: #e9e9e9;
+  justify-content: center;
+}
+#noustrouver #explorer {
+  background-color: #f2F2F2;
+  font: "Roboto" bold 12px;
+}
+fas {
+  padding-left: 5px;
+}
+
+#Fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+#Fonctionnement .step {
+  background-color: #9356dc;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+#Restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e9e9;
+}
+#Restaurants figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#Restaurants figure figcaption .far {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

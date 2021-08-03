@@ -1,8 +1,15 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 
-header h1{
+header {
+  background-color: white;
+  border-bottom: 2px;
+  box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.712);
+  max-width: 150%;
+
+  figure {
     display: flex;
     justify-content: center;
-    font-family: $font-logo;
+    align-content: center;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <title>Oh my food!</title>
+    <link href="/css/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,44 +23,57 @@
 
   <body>
     <header>
-      <div class="header_logo"><h1>ohmyfood</h1></div>
+      <figure class="header_logo">
+        <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+      </figure>
       <a href="index.html"><i class="fas fa-arrow-left"></i></a>
     </header>
 
     <h1>La palette du goût</h1>
-    <img src="images/restaurants/palettedugout.jpg" alt="palettedugout"/>
+    <img
+      class="img-menu"
+      src="images/restaurants/palettedugout.jpg"
+      alt="palettedugout"
+    />
     <i class="far fa-heart"></i>
     <section>
       <h4>ENTREES</h4>
-      <article>Fricassée d'escargot Au piment d'Espelette 25€</article>
       <article>
-        Foie gras de canard mi-cuit Et ses copeaux de truffe noire 35€
+        Fricassée d'escargot <br />Au piment d'Espelette <br />25€
       </article>
       <article>
-        Oeuf au plat Assaisonné à la truffe sur lit de caviar 20€
+        Foie gras de canard mi-cuit
+        <br />Et ses copeaux de truffe noire <br />35€
+      </article>
+      <article>
+        Oeuf au plat
+        <br />Assaisonné à la truffe sur lit de caviar <br />20€
       </article>
 
       <h4>Plats</h4>
       <article>
-        Filet de boeuf aux herbes Accompagné de sa ribambelle de légumes 40€
+        Filet de boeuf aux herbes
+        <br />Accompagné de sa ribambelle de légumes <br />40€
       </article>
       <article>
-        Parmentier de queue de boeuf À la truffe noire sur sa purée de panais
-        35€
+        Parmentier de queue de boeuf
+        <br />À la truffe noire sur sa purée de panais <br />35€
       </article>
       <article>Filet de turbot Aux agrumes 44€</article>
 
       <h4>Desserts</h4>
 
-      <article>Revisité 18€</article>
+      <article>Paris-Brest <br />Revisité <br />18€</article>
       <article>
-        Macaron au chocolat d'exception Et glace à la vanille de Madagascar 22€
+        Macaron au chocolat d'exception
+        <br />Et glace à la vanille de Madagascar <br />22€
       </article>
       <article>
-        Mousse au chocolat Au piment d'Espelette et à la truffe noire 23€
+        Mousse au chocolat
+        <br />Au piment d'Espelette et à la truffe noire <br />23€
       </article>
     </section>
-    <button>Commander</button>
+    <button class="btn-color">Commander</button>
     <footer>
       <div class="footer_logo"><h1>ohmyfood</h1></div>
       <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>

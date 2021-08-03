@@ -4,12 +4,14 @@
 footer{
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    font-family: $font-texte;
+    padding: 5px; 
     background-color: $footer-backgroundcolor;
+    justify-content: center;
+    // #footer-logo{
+    //     font: $logo #fff;
+    // }
+    p{
+        font: #fff;
+    }
 }
  
-#footer-logo{
-        @include font-logo ;
-        color:$footer-colortxt;
-    }

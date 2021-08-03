@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <title>Oh my food!</title>
+    <link href="/css/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,38 +23,55 @@
 
   <body>
     <header>
-      <div class="header_logo"><h1>ohmyfood</h1></div>
+      <figure class="header_logo">
+        <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+      </figure>
       <a href="index.html"><i class="fas fa-arrow-left"></i></a>
     </header>
-    <img src="images/restaurants/alafrancaise.jpg" alt="alafrancaise"/>
-    <h1>À la française</h1> <i class="far fa-heart"></i>
+    <img
+      class="img-menu"
+      src="images/restaurants/alafrancaise.jpg"
+      alt="alafrancaise"
+    />
+    <h1>À la française</h1>
+    <i class="far fa-heart"></i>
     <section>
       <h4>Entrées</h4>
-      <article>Tartare de poulpe acidulé Aux zestes d'orange 25€</article>
       <article>
-        Velouté de légumes d'antan Carotte, panais, topinambour 35€
+        Tartare de poulpe acidulé <br />Aux zestes d'orange <br />25€
       </article>
-      <article>Soupe à l'oignon Revisitée 20€</article>
+      <article>
+        Velouté de légumes d'antan
+        <br />Carotte, panais, topinambour <br />35€
+      </article>
+      <article>Soupe à l'oignon <br />Revisitée <br />20€</article>
     </section>
     <section>
       <h4>Plats</h4>
       <article>
-        Coquilles Saint-Jacques Accompagnées d'une purée de panais 40€
+        Coquilles Saint-Jacques
+        <br />Accompagnées d'une purée de panais <br />40€
       </article>
-      <article>Magret de canard Et parmentier de pommes de terre 35€</article>
       <article>
-        Pigeonneau d’Ille-et-Vilaine Sur son lit de gnocchis aux légumes 44€
+        Magret de canard <br />Et parmentier de pommes de terre <br />35€
+      </article>
+      <article>
+        Pigeonneau d’Ille-et-Vilaine
+        <br />Sur son lit de gnocchis aux légumes <br />44€
       </article>
     </section>
     <section>
       <h4>Desserts</h4>
-      <article>Pétales de violettes glacés Et purée de noisettes 18€</article>
-      <article>Fondant au chocolat Revisité 22€</article>
       <article>
-        Millefeuille croustillant Myrtilles et pâte d’amande 23€
+        Pétales de violettes glacés <br />Et purée de noisettes <br />18€
+      </article>
+      <article>Fondant au chocolat <br />Revisité <br />22€</article>
+      <article>
+        Millefeuille croustillant
+        <br />Myrtilles et pâte d’amande <br />23€
       </article>
     </section>
-    <button>Commander</button>
+    <button class="btn-color"> Commander</button>
     <footer>
       <div class="footer_logo"><h1>ohmyfood</h1></div>
       <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>

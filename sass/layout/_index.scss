@@ -1,0 +1,66 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#noustrouver {
+  display: flex;
+  flex-direction: column;
+
+  #localisation {
+    display: flex;
+    background-color: $color-background2; 
+    justify-content: center;
+  }
+  #explorer {
+    background-color:$color-background1;
+    font: $font-h2;
+    @extend %barre;
+    .btn-color{
+      @extend %btn-color;
+    }
+  }
+}
+fas {
+  padding-left: 5px;
+}
+
+#Fonctionnement{
+  display: flex;
+  flex-direction: column;
+  .step{
+    background-color: $color-primary;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  button {
+    @extend %box-fonctionnement;
+  }
+}
+
+#Restaurants{
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background2;
+  figure{
+    @extend %box-restaurants;
+    img{
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    figcaption{
+      .far {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+      }
+    }
+  }
+}
