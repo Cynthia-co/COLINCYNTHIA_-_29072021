@@ -50,11 +50,12 @@ fas {
     height: 60px;
     text-align: center;
     justify-content: center;
-    z-index: 2;
     text-transform: translateY(50px);
   }
   button {
+    text-transform: transalateY(20px);
     @extend %box-fonctionnement;
+    
   }
 }
 
@@ -68,12 +69,14 @@ fas {
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
+      height: 600px;
     }
     figcaption{
       .far {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        justify-content: center;
         
       }
     }
