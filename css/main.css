@@ -1,67 +1,28 @@
-#noustrouver #explorer {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0;
-  text-align: center;
-}
-
-#Fonctionnement button {
-  width: 330px;
-  height: 54px;
-  background-color: #e9e9e9;
-  border-radius: 30px;
-  border: none;
-  margin: 5px;
-}
-
-#Restaurants figure {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: flex;
-  padding: 4px;
-  flex-direction: column;
-  background-color: white;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-.img-menu {
-  width: 100%;
-  height: 465px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-h4 {
-  text-transform: uppercase;
-  border-bottom: 2px solid #99e2d0;
-}
-
-.title-restaurant {
-  background-color: #e9e9e9;
-  width: 100%;
-  display: flex;
-  transform: translateY(369px);
-  flex-direction: column;
-  justify-content: space-between;
-  border-top-right-radius: 35px;
-  border-top-left-radius: 35px;
-}
-
 body {
   font-family: "Roboto";
+  width: 100%;
 }
 
 h1 {
   font-family: "Shrikhand";
 }
 
-h5 {
+h2 {
+  margin-top: 64px;
+  font-size: 70px;
+}
+
+h4 {
+  text-transform: uppercase;
   font-weight: bold;
+  margin-top: 0;
+  border-bottom: solid #99e2d0 5px;
+  width: fit-content;
+}
+
+h5, .price {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 title-menu {
@@ -73,23 +34,77 @@ footer {
   color: #fff;
 }
 
-btn-color {
+#noustrouver #explorer {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  text-align: center;
+}
+
+#Fonctionnement button {
+  width: 650px;
+  height: 150px;
+  background-color: #e9e9e9;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+  font-size: 35px;
+}
+
+#Restaurants figure {
   width: 300px;
-  height: 60px;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  background-color: white;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+}
+
+.title-restaurant {
+  background-color: #e9e9e9;
+  width: 100%;
+  transform: translateY(375px);
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-bottom: 0;
+}
+
+.btn-color {
+  width: 700px;
+  height: 100px;
   background-color: #9356dc;
   border-radius: 50px;
+  margin: 30px;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 header {
   background-color: white;
   border-bottom: 2px;
   box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.712);
-  max-width: 150%;
+  width: 100%;
 }
 header figure {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin: 30px;
+}
+header figure img {
+  width: 450px;
+  height: auto;
 }
 
 footer {
@@ -113,27 +128,25 @@ footer .fas {
 
 #noustrouver #explorer {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   margin: 0;
   text-align: center;
 }
 
 #Fonctionnement button {
-  width: 330px;
-  height: 54px;
+  width: 650px;
+  height: 150px;
   background-color: #e9e9e9;
   border-radius: 30px;
   border: none;
   margin: 5px;
+  font-size: 35px;
 }
 
 #Restaurants figure {
   width: 300px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: flex;
   padding: 4px;
   flex-direction: column;
@@ -145,31 +158,28 @@ footer .fas {
 .img-menu {
   width: 100%;
   height: 465px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-h4 {
-  text-transform: uppercase;
-  border-bottom: 2px solid #99e2d0;
+  object-fit: cover;
 }
 
 .title-restaurant {
   background-color: #e9e9e9;
   width: 100%;
-  display: flex;
-  transform: translateY(369px);
-  flex-direction: column;
-  justify-content: space-between;
+  transform: translateY(375px);
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
+  margin-bottom: 0;
 }
 
-btn-color {
-  width: 300px;
-  height: 60px;
+.btn-color {
+  width: 700px;
+  height: 100px;
   background-color: #9356dc;
   border-radius: 50px;
+  margin: 30px;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 a {
@@ -185,10 +195,26 @@ a {
   display: flex;
   background-color: #e9e9e9;
   justify-content: center;
+  font-size: 52px;
 }
 #noustrouver #explorer {
   background-color: #f2F2F2;
   font: "Roboto" bold 12px;
+  margin-top: 65px;
+}
+#noustrouver #explorer p {
+  font-size: 19px;
+}
+#noustrouver #explorer button .btn-color .btn-color {
+  width: 300px;
+  height: 60px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+}
+#noustrouver #explorer span {
+  display: block;
 }
 
 fas {
@@ -198,13 +224,16 @@ fas {
 #Fonctionnement {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
 }
 #Fonctionnement .step {
   background-color: #9356dc;
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   text-align: center;
+  justify-content: center;
 }
 #Restaurants {
   display: flex;
@@ -212,8 +241,7 @@ fas {
   background-color: #e9e9e9;
 }
 #Restaurants figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -223,11 +251,96 @@ fas {
   align-items: flex-end;
 }
 
-btn-color {
+body {
+  font-family: "Roboto";
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+h2 {
+  margin-top: 64px;
+  font-size: 70px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  border-bottom: solid #99e2d0 5px;
+  width: fit-content;
+}
+
+h5, .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+title-menu {
+  text-transform: uppercase;
+  border-bottom: 2px solid #99e2d0;
+}
+
+footer {
+  color: #fff;
+}
+
+#noustrouver #explorer {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  text-align: center;
+}
+
+#Fonctionnement button {
+  width: 650px;
+  height: 150px;
+  background-color: #e9e9e9;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+  font-size: 35px;
+}
+
+#Restaurants figure {
   width: 300px;
-  height: 60px;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  background-color: white;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+}
+
+.title-restaurant {
+  background-color: #e9e9e9;
+  width: 100%;
+  transform: translateY(375px);
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-bottom: 0;
+}
+
+.btn-color {
+  width: 700px;
+  height: 100px;
   background-color: #9356dc;
   border-radius: 50px;
+  margin: 30px;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .img-menu {
@@ -235,13 +348,64 @@ btn-color {
   z-index: -1;
 }
 
-.btn-color {
-  display: flex;
+.btn-color .btn-color {
+  width: 300px;
+  height: 60px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  margin: 20px;
   justify-content: center;
-  align-items: center;
 }
 
 .title-restaurant {
   position: absolute;
   z-index: 2;
-}/*# sourceMappingURL=main.css.map */
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-restaurant h1 {
+  margin-left: 10px;
+}
+.title-restaurant .fas {
+  margin-right: 20px;
+}
+
+section {
+  background-color: #e9e9e9;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+section article {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  background-color: #fff;
+  box-shadow: 2px #c3c3c3;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  height: fit-content;
+  line-height: 1;
+  margin: 10px;
+  padding: 20px;
+  margin-right: 10px;
+}
+section article h5, section article p {
+  margin: 0;
+}
+section article .ingredients {
+  padding: 3px;
+  background: #fff;
+  display: flex;
+  border-color: black;
+  box-shadow: 2px #c3c3c3;
+}
+section article .ingredients-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=main.css.map */

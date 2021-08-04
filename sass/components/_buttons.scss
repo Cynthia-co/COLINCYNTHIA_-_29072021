@@ -1,7 +1,13 @@
-btn-color{
-    width: 300px;
-    height: 60px;
+@import "../Utils/variables";
+
+.btn-color{
+    width: 700px;
+    height: 100px;
     background-color: $color-primary;
     border-radius: 50px;
-    
+    margin: 30px;
+    justify-content: center;
+    font-size: 50px;
+    color: $color-footer;
+    margin-bottom: 30px;
 }

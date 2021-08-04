@@ -1,3 +1,5 @@
+@import "../Utils/variables";
+
 %barre{
     width:  100%;
     height: fit-content;
@@ -6,12 +8,13 @@
 }
 
 %box-fonctionnement{
-    width: 330px;
-    height: 54px;
+    width: 650px;
+    height: 150px;
     background-color: $color-background2;
     border-radius: 30px;
     border: none;
     margin: 5px;
+    font-size: $font-size;
 }
 
 %box-restaurants{
@@ -32,20 +35,12 @@
     object-fit: cover;
 }
 
-%title-menu{
-    text-transform: uppercase;
-    border-bottom: 2px solid $color-tertiary; 
-    
-}
-
 %title-restaurant{
     background-color: $color-background2;
     width: 100%;
-    display: flex;
-    transform: translateY(369px);
-    flex-direction: column;
-    justify-content: space-between;
+    transform: translateY(375px);
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
-    
+    margin-bottom: 0;
 }
+

@@ -1,12 +1,35 @@
-//   @mixin font-txt { @font-face {
-    
-//     font-family: "Roboto";
-//       src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
-//    }
-//  }
+@import "../Utils/variables";
 
-//   @mixin font-logo { @font-face {
-//     font-family: "Shrikhand", cursive;
-//     src: url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-// } }
+@mixin btn-color{
+  .btn-color{
+    width: 300px;
+    height: 60px;
+    background-color: $color-primary;
+    border-radius: 50px;
+    margin:20px;
+    justify-content: center;
+  }
+}
 
+@mixin underscore{
+  border-bottom: solid $color-tertiary 5px;
+  
+}
+
+@mixin ingredients{
+  background: $color-footer;
+  display: flex;
+  border-color: black;
+  box-shadow: 2px #c3c3c3;
+
+}
+
+@mixin ligne{
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin colonne {
+  display: flex;
+  flex-direction: column;
+}
