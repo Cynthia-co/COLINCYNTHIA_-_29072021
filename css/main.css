@@ -5,6 +5,7 @@ body {
 
 h1 {
   font-family: "Shrikhand";
+  font-size: 72px;
 }
 
 h2 {
@@ -12,17 +13,27 @@ h2 {
   font-size: 70px;
 }
 
+p {
+  font-size: 35px;
+}
+
 h4 {
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 10px;
   border-bottom: solid #99e2d0 5px;
   width: fit-content;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 h5, .price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
+}
+
+.far {
+  font-size: 3em;
 }
 
 title-menu {
@@ -42,13 +53,14 @@ footer {
 }
 
 #Fonctionnement button {
-  width: 650px;
+  width: 920px;
   height: 150px;
   background-color: #e9e9e9;
   border-radius: 30px;
   border: none;
   margin: 5px;
   font-size: 35px;
+  z-index: 0;
 }
 
 #Restaurants figure {
@@ -72,10 +84,10 @@ footer {
 .title-restaurant {
   background-color: #e9e9e9;
   width: 100%;
-  transform: translateY(375px);
+  transform: translateY(325px);
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
-  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .btn-color {
@@ -88,6 +100,10 @@ footer {
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+
+.btn-color-command {
+  margin: 100px;
 }
 
 header {
@@ -106,6 +122,16 @@ header figure img {
   width: 450px;
   height: auto;
 }
+header .fas {
+  font-size: 50px;
+}
+header #header_menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 180px;
+}
 
 footer {
   display: flex;
@@ -113,17 +139,21 @@ footer {
   padding: 5px;
   background-color: #333333;
   justify-content: center;
-  margin: 2px;
+  margin: 5px;
 }
 footer h1 {
-  font-size: small;
+  font-size: 50px;
+  margin: 5px;
 }
 footer p {
   color: #fff;
   margin: 5px;
 }
-footer .fas {
-  padding-right: 2px;
+footer p .fas {
+  margin-right: 15px;
+}
+footer p .fa-hands-helping {
+  font-size: smaller;
 }
 
 #noustrouver #explorer {
@@ -134,13 +164,14 @@ footer .fas {
 }
 
 #Fonctionnement button {
-  width: 650px;
+  width: 920px;
   height: 150px;
   background-color: #e9e9e9;
   border-radius: 30px;
   border: none;
   margin: 5px;
   font-size: 35px;
+  z-index: 0;
 }
 
 #Restaurants figure {
@@ -164,10 +195,10 @@ footer .fas {
 .title-restaurant {
   background-color: #e9e9e9;
   width: 100%;
-  transform: translateY(375px);
+  transform: translateY(325px);
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
-  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .btn-color {
@@ -180,6 +211,10 @@ footer .fas {
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+
+.btn-color-command {
+  margin: 100px;
 }
 
 a {
@@ -203,7 +238,7 @@ a {
   margin-top: 65px;
 }
 #noustrouver #explorer p {
-  font-size: 19px;
+  font-size: 48px;
 }
 #noustrouver #explorer button .btn-color .btn-color {
   width: 300px;
@@ -230,10 +265,12 @@ fas {
 #Fonctionnement .step {
   background-color: #9356dc;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   justify-content: center;
+  z-index: 2;
+  text-transform: translateY(50px);
 }
 #Restaurants {
   display: flex;
@@ -258,6 +295,7 @@ body {
 
 h1 {
   font-family: "Shrikhand";
+  font-size: 72px;
 }
 
 h2 {
@@ -265,17 +303,27 @@ h2 {
   font-size: 70px;
 }
 
+p {
+  font-size: 35px;
+}
+
 h4 {
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 10px;
   border-bottom: solid #99e2d0 5px;
   width: fit-content;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 h5, .price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
+}
+
+.far {
+  font-size: 3em;
 }
 
 title-menu {
@@ -295,13 +343,14 @@ footer {
 }
 
 #Fonctionnement button {
-  width: 650px;
+  width: 920px;
   height: 150px;
   background-color: #e9e9e9;
   border-radius: 30px;
   border: none;
   margin: 5px;
   font-size: 35px;
+  z-index: 0;
 }
 
 #Restaurants figure {
@@ -325,10 +374,10 @@ footer {
 .title-restaurant {
   background-color: #e9e9e9;
   width: 100%;
-  transform: translateY(375px);
+  transform: translateY(325px);
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
-  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .btn-color {
@@ -341,6 +390,10 @@ footer {
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+
+.btn-color-command {
+  margin: 100px;
 }
 
 .img-menu {
@@ -360,38 +413,39 @@ footer {
 .title-restaurant {
   position: absolute;
   z-index: 2;
-  margin: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .title-restaurant h1 {
   margin-left: 10px;
+  padding-right: 30px;
 }
-.title-restaurant .fas {
+.title-restaurant .far {
   margin-right: 20px;
+  padding-right: 30px;
 }
 
 section {
   background-color: #e9e9e9;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 40px;
+  padding-top: 50px;
 }
 section article {
   display: flex;
-  display: flex;
   flex-direction: column;
-  line-height: 1em;
   background-color: #fff;
-  box-shadow: 2px #c3c3c3;
-  border: none;
+  box-shadow: 10px #c3c3c3;
   border-radius: 20px;
-  width: 80%;
-  height: fit-content;
-  line-height: 1;
-  margin: 10px;
+  width: 880px;
+  height: 80px;
+  line-height: 1.5;
+  margin: 41px;
   padding: 20px;
   margin-right: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
 }
 section article h5, section article p {
   margin: 0;
@@ -406,6 +460,8 @@ section article .ingredients {
 section article .ingredients-bottom {
   display: flex;
   justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

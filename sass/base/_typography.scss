@@ -8,26 +8,34 @@ body{
 
 h1{
     font-family: "Shrikhand";
+    font-size: 72px;
 }
 
 h2{
     margin-top: 64px;
     font-size: 70px;
 }
-
+p{
+    font-size: 35px;
+}
 h4{
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 0;
+    margin-top: 10px;
     @include underscore;
     width: fit-content;
+    font-size: 40px;
+    margin-left: 10px;
 }
 
 h5, .price{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
+    
 }
-
+.far{
+    font-size: 3em;
+}
 title-menu{
     text-transform: uppercase;
     border-bottom: 2px solid $color-tertiary; 

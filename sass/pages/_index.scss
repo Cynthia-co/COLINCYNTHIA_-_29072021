@@ -24,7 +24,7 @@ a{
     @extend %barre;
     margin-top: 65px;
     p{
-      font-size: 19px;
+      font-size: 48px;
     }
     button .btn-color{
       @include btn-color;
@@ -46,11 +46,12 @@ fas {
   .step{
     background-color: $color-primary;
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     justify-content: center;
-    
+    z-index: 2;
+    text-transform: translateY(50px);
   }
   button {
     @extend %box-fonctionnement;

@@ -33,3 +33,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin center {
+  display: flex;
+  
+  align-items: center;
+  
+}

@@ -7,17 +7,22 @@ footer{
     padding: 5px;
     background-color: $footer-backgroundcolor;
     justify-content: center;
-    margin: 2px;
+    margin: 5px;
     h1{
-        font-size: small;
+        font-size: 50px;
+        margin:5px;
     }
     p{
         color: $color-footer;
         margin: 5px;
         
+        .fas{
+        margin-right: 15px;
     }
-    .fas{
-        padding-right: 2px;
-    }
+        .fa-hands-helping{
+            font-size: smaller;
+        }
 }
+    }
+    
  

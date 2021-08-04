@@ -8,13 +8,14 @@
 }
 
 %box-fonctionnement{
-    width: 650px;
+    width: 920px;
     height: 150px;
     background-color: $color-background2;
     border-radius: 30px;
     border: none;
     margin: 5px;
     font-size: $font-size;
+    z-index: 0;
 }
 
 %box-restaurants{
@@ -38,9 +39,9 @@
 %title-restaurant{
     background-color: $color-background2;
     width: 100%;
-    transform: translateY(375px);
+    transform: translateY(325px);
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
-    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
