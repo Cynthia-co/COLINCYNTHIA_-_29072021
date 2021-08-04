@@ -270,17 +270,15 @@ fas {
   justify-content: center;
   background-color: #fff;
 }
-#Fonctionnement .step {
+#Fonctionnement button span {
+  display: flex;
+  justify-content: flex-start;
   background-color: #9356dc;
   border-radius: 100%;
   width: 60px;
   height: 60px;
   text-align: center;
-  justify-content: center;
-  text-transform: translateY(50px);
-}
-#Fonctionnement button {
-  text-transform: transalateY(20px);
+  justify-content: flex-start;
 }
 
 #Restaurants {
