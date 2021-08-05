@@ -329,11 +329,15 @@ a {
   flex-direction: column;
   background-color: #e9e9e9;
 }
+#Restaurants figure:hover {
+  cursor: pointer;
+}
 #Restaurants figure img {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 600px;
+  z-index: 0;
 }
 #Restaurants figure figcaption {
   display: flex;
@@ -341,6 +345,17 @@ a {
   flex-direction: row-reverse;
   margin: 30px;
   margin-top: 40px;
+}
+#Restaurants figure figcaption .new {
+  position: absolute;
+  background-color: #99e2d0;
+  transform: translateY(-600px);
+  z-index: 2;
+  padding: 10px;
+}
+#Restaurants figure figcaption .new p {
+  color: #1b6150;
+  font-weight: bold;
 }
 #Restaurants figure figcaption .figcaption-restau {
   display: flex;

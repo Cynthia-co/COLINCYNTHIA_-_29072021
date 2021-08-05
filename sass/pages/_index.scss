@@ -83,18 +83,32 @@ a{
   background-color: $color-background2;
   figure{
     @extend %box-restaurants;
+    &:hover{
+      cursor: pointer;
+    }
     img{
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       height: 600px;
+      z-index: 0;
     }
     figcaption{
       @include ligne;
       flex-direction: row-reverse;
       margin:30px;
       margin-top: 40px;
-      
+      .new{
+        position: absolute;
+        background-color: $color-tertiary;
+        transform: translateY(-600px);
+        z-index: 2;
+        padding: 10px;
+        p{
+          color:darken($color: $color-tertiary, $amount: 50);
+          font-weight: bold
+        }
+      }
       .figcaption-restau{
         @include figcaption-restau;
         p{
