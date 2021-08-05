@@ -34,10 +34,17 @@ h4{
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 10px;
-    @include underscore;
+    // @include underscore;
     width: fit-content;
     font-size: 40px;
     margin-left: 10px;
+    &::after{
+        content:"";
+        border-bottom: 5px solid $color-tertiary;
+        width: 94px;
+        display: block;
+        padding-top: 3px;
+    }
 }
 
 h5, .price{

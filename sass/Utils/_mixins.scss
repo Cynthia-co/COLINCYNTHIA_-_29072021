@@ -15,10 +15,6 @@
   box-shadow: 5px 5px 0px 0px #c3c3c3;
 }
 
-@mixin underscore{
-  border-bottom: solid $color-tertiary 5px;
-  
-}
 
 @mixin ingredients{
   background: $color-footer;
