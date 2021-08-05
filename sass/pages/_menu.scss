@@ -3,6 +3,7 @@
 @import "../Utils/variables";
 @import "../Utils/extensions";
 @import "../components/buttons";
+@import "../components/keyframes";
 
 
 .img-menu{
@@ -36,14 +37,16 @@
 }
 section {
     background-color: $color-background2;
+    
     margin-bottom: 0;
     margin-top: 40px;
     padding-top: 50px;
+   
+       
 article{
     @include colonne;
     background-color: $color-footer;
-    box-shadow: 10px #c3c3c3;
-    
+    box-shadow: 0px 0px 5px 5px #c3c3c3;
     border-radius: 20px;
     width: 880px;
     height: 80px;
@@ -53,6 +56,13 @@ article{
     margin-right: 10px;
     padding: 15px;
     padding-bottom: 30px;
+    
+    &:active{
+        animation: affichage-menu 3s;
+       
+    }
+    
+
     h5, p{
         margin: 0;
     }
@@ -64,6 +74,5 @@ article{
             @include ligne;
             @include center;
         }
-
-}
+    }    
 }

@@ -1,4 +1,5 @@
 @import "../Utils/variables";
+@import "../Utils/mixins";
 
 .btn-color{
     width: 750px;
@@ -10,10 +11,12 @@
     font-size: 50px;
     color: $color-footer;
     margin-bottom: 30px;
+    @include box-shadow;
     &:hover{
        filter:opacity(80%);
        transition: opacity 250ms;
        cursor: pointer;
+       box-shadow: 8px 8px 0px 0px darken($color: #c3c3c3, $amount: 2);
     }
 }
 
