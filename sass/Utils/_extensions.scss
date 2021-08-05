@@ -5,6 +5,7 @@
     height: fit-content;
     margin: 0;
     text-align: center;
+    
 }
 
 %box-fonctionnement{
@@ -13,7 +14,7 @@
     background-color: $color-background2;
     border-radius: 30px;
     border: none;
-    margin: 5px;
+    margin: 20px;
     font-size: $font-size;
     z-index: 0;
 }
@@ -39,8 +40,8 @@
     background-color: $color-background2;
     width: 100%;
     transform: translateY(325px);
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
     padding-bottom: 10px;
 }
 

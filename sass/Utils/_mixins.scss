@@ -39,3 +39,15 @@
   align-items: center;
   
 }
+
+@mixin tranform-step {
+  transform: translateX(-155px);
+  
+}
+
+@mixin figcaption-restau {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  
+}
