@@ -3,7 +3,7 @@
 .btn-color{
     width: 700px;
     height: 100px;
-    background-color: $color-primary;
+    background: linear-gradient($color-secondary, $color-primary);
     border-radius: 50px;
     margin: 30px;
     justify-content: center;
