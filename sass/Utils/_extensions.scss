@@ -17,6 +17,13 @@
     margin: 20px;
     font-size: $font-size;
     z-index: 0;
+    &:hover{
+        background-color: lighten($color: $color-primary, $amount: 35);
+        cursor: pointer;
+        i{
+            color: $color-primary;
+        }
+    }
 }
 
 %box-restaurants{

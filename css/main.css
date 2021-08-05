@@ -72,6 +72,13 @@ footer {
   font-size: 35px;
   z-index: 0;
 }
+#Fonctionnement button:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+#Fonctionnement button:hover i {
+  color: #9356dc;
+}
 
 #Restaurants figure {
   width: 95%;
@@ -100,15 +107,20 @@ footer {
 }
 
 .btn-color {
-  width: 700px;
-  height: 100px;
+  width: 750px;
+  height: 130px;
   background: linear-gradient(#ff79DA, #9356dc);
-  border-radius: 50px;
+  border-radius: 100px;
   margin: 30px;
   justify-content: center;
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+.btn-color:hover {
+  filter: opacity(80%);
+  transition: opacity 250ms;
+  cursor: pointer;
 }
 
 .btn-color-command {
@@ -182,6 +194,13 @@ footer p .fa-hands-helping {
   font-size: 35px;
   z-index: 0;
 }
+#Fonctionnement button:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+#Fonctionnement button:hover i {
+  color: #9356dc;
+}
 
 #Restaurants figure {
   width: 95%;
@@ -210,15 +229,20 @@ footer p .fa-hands-helping {
 }
 
 .btn-color {
-  width: 700px;
-  height: 100px;
+  width: 750px;
+  height: 130px;
   background: linear-gradient(#ff79DA, #9356dc);
-  border-radius: 50px;
+  border-radius: 100px;
   margin: 30px;
   justify-content: center;
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+.btn-color:hover {
+  filter: opacity(80%);
+  transition: opacity 250ms;
+  cursor: pointer;
 }
 
 .btn-color-command {
@@ -404,6 +428,13 @@ footer {
   font-size: 35px;
   z-index: 0;
 }
+#Fonctionnement button:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+#Fonctionnement button:hover i {
+  color: #9356dc;
+}
 
 #Restaurants figure {
   width: 95%;
@@ -432,15 +463,20 @@ footer {
 }
 
 .btn-color {
-  width: 700px;
-  height: 100px;
+  width: 750px;
+  height: 130px;
   background: linear-gradient(#ff79DA, #9356dc);
-  border-radius: 50px;
+  border-radius: 100px;
   margin: 30px;
   justify-content: center;
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+}
+.btn-color:hover {
+  filter: opacity(80%);
+  transition: opacity 250ms;
+  cursor: pointer;
 }
 
 .btn-color-command {
