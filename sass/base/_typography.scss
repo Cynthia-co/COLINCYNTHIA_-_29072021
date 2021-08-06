@@ -12,8 +12,9 @@ h1{
 }
 
 h2{
-    margin-top: 64px;
+    margin-top: 20px;
     font-size: 70px;
+    margin-left: 20px;
 }
 p{
     font-size: 35px;
@@ -34,7 +35,7 @@ h4{
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 10px;
-    // @include underscore;
+    
     width: fit-content;
     font-size: 40px;
     margin-left: 10px;

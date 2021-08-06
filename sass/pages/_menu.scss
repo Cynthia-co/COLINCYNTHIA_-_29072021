@@ -37,7 +37,6 @@
 }
 section {
     background-color: $color-background2;
-    
     margin-bottom: 0;
     margin-top: 40px;
     padding-top: 50px;
@@ -46,33 +45,31 @@ section {
 article{
     @include colonne;
     background-color: $color-footer;
-    box-shadow: 0px 0px 5px 5px #c3c3c3;
+    box-shadow: 0px 4px 0px 4px #c3c3c3;
     border-radius: 20px;
     width: 880px;
     height: 80px;
     line-height: 1.5;
     margin: 41px;
-    padding: 20px;
-    margin-right: 10px;
     padding: 15px;
+    margin-right: 10px;
     padding-bottom: 30px;
-    
-    &:active{
-        animation: affichage-menu 3s;
-       
-    }
-    
-
+    animation: affichage-menu 250ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
     h5, p{
         margin: 0;
     }
     .ingredients{
         padding: 3px;
         @include ingredients;
-    } 
-    .ingredients-bottom{
+    &__bottom{
             @include ligne;
             @include center;
         }
-    }    
+        
+    &__check{
+        
+    }
 }
+}}
