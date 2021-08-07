@@ -37,12 +37,10 @@
 @mixin center {
   display: flex;
   align-items: center;
-  
 }
 
 @mixin tranform-step {
   transform: translateX(-155px);
-  
 }
 
 @mixin figcaption-restau {

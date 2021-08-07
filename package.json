@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "./node_modules/.bin/sass --watch ./sass/main.scss:./css/main.css"
+    "sass": "./node_modules/.bin/sass --watch ./sass/main.scss:./css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/" 
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Cynthia-co/COLINCYNTHIA_-_29072021/issues"
+    "url": "https://github.com/Cynthia-co/COLINCYNTHIA_-_29072021/issues",
+    "browserslist": "last 4 versions"
   },
   "homepage": "https://github.com/Cynthia-co/COLINCYNTHIA_-_29072021#readme"
 }

@@ -5,27 +5,25 @@ header {
   background-color: white;
   border-bottom: 2px;
   width: 100%;
-  
-
-  figure {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 30px;
-    img{
-      width: 450px;
-      height: auto;
-      
-    }
-  }
-  .fas{
-    font-size: 50px;
-  }
-  #header_menu{
+ .header__menu {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
     margin-right: 180px;
   }
+  figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30px;
+    img {
+      width: 450px;
+      height: auto;
+    }
+  }
+  .fas {
+    font-size: 50px;
+  }
+ 
 }
