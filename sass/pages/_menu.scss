@@ -40,7 +40,8 @@ section {
     margin-bottom: 0;
     margin-top: 40px;
     padding-top: 50px;
-   
+    
+
        
 article{
     @include colonne;
@@ -54,9 +55,14 @@ article{
     padding: 15px;
     margin-right: 10px;
     padding-bottom: 30px;
-    animation: affichage-menu 250ms;
+    animation: affichage-menu 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
+    -webkit-animation: affichage-menu 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+   
+   
     h5, p{
         margin: 0;
     }
@@ -67,12 +73,29 @@ article{
             @include ligne;
             @include center;
         }
+    &__price{
+        &:hover{
+            transform: translateX(-130px);
+        }
+    }
         
     &__check{
-        
         color: $color-tertiary;
-        justify-content: flex-end;
-        display: flex;
         align-items: center;
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        // background-color: $color-tertiary;
+        margin: 0;
+        padding-top: 0;
+        transform: translate(16px, -14px);
+        visibility: hidden;
+        &:hover{
+            visibility: visible;
+         }
 }
 }}}

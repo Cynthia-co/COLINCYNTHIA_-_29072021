@@ -44,8 +44,7 @@
 }
 
 @mixin figcaption-restau {
-  display: flex;
-  flex-direction: column;
+  @include colonne;
   font-size: 1em;
   
 }
