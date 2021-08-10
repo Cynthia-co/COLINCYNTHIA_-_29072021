@@ -16,14 +16,21 @@ h2{
     margin-top: 20px;
     font-size: 70px;
     margin-left: 20px;
+    @include desktop{
+        font-size: 45px;
+    }
 }
 p{
     font-size: 35px;
+
 }
 
 h3{
     font-size: 45px;
     margin: 3px;
+    @include desktop{
+        font-size: 30px;
+    }
 }
 figcaption{
     

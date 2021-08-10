@@ -13,6 +13,11 @@ h2 {
   font-size: 70px;
   margin-left: 20px;
 }
+@media screen and (min-width: 1025px) {
+  h2 {
+    font-size: 45px;
+  }
+}
 
 p {
   font-size: 35px;
@@ -21,6 +26,11 @@ p {
 h3 {
   font-size: 45px;
   margin: 3px;
+}
+@media screen and (min-width: 1025px) {
+  h3 {
+    font-size: 30px;
+  }
 }
 
 figcaption p {
@@ -68,6 +78,14 @@ footer {
   margin: 0;
   text-align: center;
 }
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
 
 #Fonctionnement button {
   width: 920px;
@@ -79,6 +97,12 @@ footer {
   margin: 30px;
   font-size: 35px;
   z-index: 0;
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button {
+    width: 550px;
+    height: 100px;
+  }
 }
 #Fonctionnement button:hover {
   background-color: #f2eafb;
@@ -98,6 +122,14 @@ footer {
   margin: 23px;
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
+}
+@media screen and (min-width: 1025px) {
+  #Restaurants figure {
+    width: 632px;
+    height: 580px;
+    flex-flow: row wrap;
+    object-fit: cover;
+  }
 }
 
 .img-menu {
@@ -134,6 +166,13 @@ footer {
   cursor: pointer;
   box-shadow: 8px 8px 0px 0px #bebebe;
 }
+@media screen and (min-width: 1025px) {
+  .btn-color {
+    width: 350px;
+    height: auto;
+    font-size: 35px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -144,6 +183,24 @@ footer {
     transform: opacity(0);
   }
   100% {
+    transform: opacity(1);
+  }
+}
+@keyframes check {
+  0% {
+    transform: translateX(-125px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    color: none;
+    transform: opacity(0);
+  }
+  100% {
+    color: linear-gradient(#ff79DA, #9356dc);
     transform: opacity(1);
   }
 }
@@ -202,6 +259,14 @@ footer p .fa-hands-helping {
   margin: 0;
   text-align: center;
 }
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
 
 #Fonctionnement button {
   width: 920px;
@@ -213,6 +278,12 @@ footer p .fa-hands-helping {
   margin: 30px;
   font-size: 35px;
   z-index: 0;
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button {
+    width: 550px;
+    height: 100px;
+  }
 }
 #Fonctionnement button:hover {
   background-color: #f2eafb;
@@ -232,6 +303,14 @@ footer p .fa-hands-helping {
   margin: 23px;
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
+}
+@media screen and (min-width: 1025px) {
+  #Restaurants figure {
+    width: 632px;
+    height: 580px;
+    flex-flow: row wrap;
+    object-fit: cover;
+  }
 }
 
 .img-menu {
@@ -268,6 +347,13 @@ footer p .fa-hands-helping {
   cursor: pointer;
   box-shadow: 8px 8px 0px 0px #bebebe;
 }
+@media screen and (min-width: 1025px) {
+  .btn-color {
+    width: 350px;
+    height: auto;
+    font-size: 35px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -282,6 +368,11 @@ a {
   display: flex;
   flex-direction: column;
   padding-top: 0;
+}
+@media screen and (min-width: 1025px) {
+  #noustrouver {
+    background: none;
+  }
 }
 #noustrouver p {
   font-size: 40px;
@@ -298,10 +389,25 @@ a {
   font-size: 52px;
   box-shadow: 0px -7px 0px 0px #e4e4e4;
 }
+@media screen and (min-width: 1025px) {
+  #noustrouver #localisation {
+    width: 400px;
+    background-color: #d5f3eb;
+    border-radius: 50px;
+    box-shadow: none;
+    font-size: 35px;
+  }
+}
 #noustrouver #explorer {
   background-color: #f2F2F2;
   font: "Roboto" bold 12px;
   margin-top: 65px;
+}
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer {
+    width: 700px;
+    height: auto;
+  }
 }
 #noustrouver #explorer p {
   font-size: 26px;
@@ -317,12 +423,24 @@ a {
 #noustrouver #explorer span {
   display: block;
 }
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer {
+    width: 40%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
 
 #Fonctionnement {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement {
+    display: block;
+  }
 }
 #Fonctionnement button {
   display: flex;
@@ -342,8 +460,25 @@ a {
   transform: translateX(-155px);
   color: #fff;
 }
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button .step {
+    transform: translateX(-80px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button .step {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
 #Fonctionnement button .step2 {
   transform: translateX(-170px);
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button .step2 {
+    transform: translateX(-90px);
+  }
 }
 #Fonctionnement button .fas {
   margin-right: 30px;
@@ -363,6 +498,11 @@ a {
   border-top-right-radius: 15px;
   height: 600px;
   z-index: 0;
+}
+@media screen and (min-width: 1025px) {
+  #Restaurants figure img {
+    height: 400px;
+  }
 }
 #Restaurants figure figcaption {
   display: flex;
@@ -409,6 +549,11 @@ h2 {
   font-size: 70px;
   margin-left: 20px;
 }
+@media screen and (min-width: 1025px) {
+  h2 {
+    font-size: 45px;
+  }
+}
 
 p {
   font-size: 35px;
@@ -417,6 +562,11 @@ p {
 h3 {
   font-size: 45px;
   margin: 3px;
+}
+@media screen and (min-width: 1025px) {
+  h3 {
+    font-size: 30px;
+  }
 }
 
 figcaption p {
@@ -464,6 +614,14 @@ footer {
   margin: 0;
   text-align: center;
 }
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
 
 #Fonctionnement button {
   width: 920px;
@@ -475,6 +633,12 @@ footer {
   margin: 30px;
   font-size: 35px;
   z-index: 0;
+}
+@media screen and (min-width: 1025px) {
+  #Fonctionnement button {
+    width: 550px;
+    height: 100px;
+  }
 }
 #Fonctionnement button:hover {
   background-color: #f2eafb;
@@ -494,6 +658,14 @@ footer {
   margin: 23px;
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
+}
+@media screen and (min-width: 1025px) {
+  #Restaurants figure {
+    width: 632px;
+    height: 580px;
+    flex-flow: row wrap;
+    object-fit: cover;
+  }
 }
 
 .img-menu {
@@ -530,6 +702,13 @@ footer {
   cursor: pointer;
   box-shadow: 8px 8px 0px 0px #bebebe;
 }
+@media screen and (min-width: 1025px) {
+  .btn-color {
+    width: 350px;
+    height: auto;
+    font-size: 35px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -540,6 +719,24 @@ footer {
     transform: opacity(0);
   }
   100% {
+    transform: opacity(1);
+  }
+}
+@keyframes check {
+  0% {
+    transform: translateX(-125px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    color: none;
+    transform: opacity(0);
+  }
+  100% {
+    color: linear-gradient(#ff79DA, #9356dc);
     transform: opacity(1);
   }
 }
@@ -564,11 +761,17 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.title-restaurant__heart-color {
+  color: transparent;
+}
+.title-restaurant__heart-color:hover {
+  animation: heart;
+}
 .title-restaurant h1 {
   margin-left: 10px;
   padding-right: 30px;
 }
-.title-restaurant .far {
+.title-restaurant .fa-heart, .title-restaurant .fas-heart {
   margin-right: 20px;
   padding-right: 30px;
 }
@@ -619,7 +822,6 @@ section article .ingredients__price:hover {
   transform: translateX(-130px);
 }
 section article .ingredients__check {
-  color: #99e2d0;
   align-items: center;
   display: flex;
   align-self: flex-end;
@@ -628,13 +830,18 @@ section article .ingredients__check {
   height: 125px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  background-color: #99e2d0;
   margin: 0;
   padding-top: 0;
-  transform: translate(16px, -14px);
+  right: 20px;
+  translate: 10px;
   visibility: hidden;
 }
-section article .ingredients__check:hover {
+section article .ingredients__check__check:hover {
   visibility: visible;
+  animation: check 300ms ease-in-out;
+  transition: 300ms;
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -25,14 +25,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__heart-color{
+        color: transparent;
+       
+        &:hover{
+            animation: heart;
+           
+        }
+    }
     
     h1{
         margin-left: 10px;
         padding-right: 30px;
     }
-    .far{
+    .fa-heart, .fas-heart{
         margin-right: 20px;
-        padding-right: 30px;
+        padding-right: 30px;     
     }
 }
 section {
@@ -61,8 +69,7 @@ article{
     -webkit-animation: affichage-menu 2s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: both;
-   
-   
+      
     h5, p{
         margin: 0;
     }
@@ -80,7 +87,7 @@ article{
     }
         
     &__check{
-        color: $color-tertiary;
+        
         align-items: center;
         display: flex;
         align-self: flex-end;
@@ -89,13 +96,25 @@ article{
         height: 125px;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
-        // background-color: $color-tertiary;
+        background-color: $color-tertiary;
         margin: 0;
         padding-top: 0;
-        transform: translate(16px, -14px);
+        right: 20px;
+       translate: 10px;
         visibility: hidden;
-        &:hover{
-            visibility: visible;
+        // .fa-check-circle{
+            // position: absolute;
+            // justify-content: center;
+            // color: $color-tertiary;
+            // background-color: #fff;
+            // border:100px;}
+        
+        &__check:hover{
+            visibility:visible;
+            animation: check 300ms ease-in-out;
+            transition: 300ms ;
+            color: $color-tertiary;
          }
 }
 }}}
+

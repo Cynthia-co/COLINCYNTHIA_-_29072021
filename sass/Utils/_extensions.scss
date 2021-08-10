@@ -6,6 +6,12 @@
     height: fit-content;
     margin: 0;
     text-align: center;
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+    }
 }
 
 %box-fonctionnement{
@@ -18,6 +24,10 @@
     margin: 30px;
     font-size: $font-size;
     z-index: 0;
+    @include desktop{
+        width: 550px;
+        height: 100px;
+    }
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35);
         cursor: pointer;
@@ -37,6 +47,12 @@
     margin: 23px;
     border-radius: 20px;
     @include box-shadow;
+    @include desktop{
+        width: 632px;
+        height: 580px;
+        flex-flow: row wrap;
+        object-fit: cover;
+    }
 }
 
 %img-menu{

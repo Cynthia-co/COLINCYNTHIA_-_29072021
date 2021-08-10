@@ -12,7 +12,9 @@ a{
   display: flex;
   flex-direction: column;
   padding-top: 0;
-  
+  @include desktop{
+    background: none;
+  }
   p{
     font-size: 40px;
   }
@@ -27,12 +29,24 @@ a{
     justify-content: center;
     font-size: 52px;
     box-shadow: 0px -7px 0px 0px darken($color: $color-background2, $amount: 2);
+    @include desktop{
+      width:400px;
+      background-color: lighten($color-tertiary, 15%);
+      border-radius: 50px;
+      box-shadow: none;
+      font-size: 35px;
+    }
   }
   #explorer {
     background-color:$color-background1;
     font: $font-h2 ;
     @extend %barre;
     margin-top: 65px;
+    @include desktop{
+      
+      width: 700px;
+      height: auto;
+    }
     p{
       font-size: 26px;
     }
@@ -42,22 +56,29 @@ a{
     span {
       display: block;
     }
+  @include desktop{
+    width: 40%;
+    justify-content: flex-start;
+    margin: 0;
+  }
   }
 }
-
 
 #Fonctionnement{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $color-footer;
+  @include desktop{
+    display: block
+  }
   
   button {
     @include center;
     @extend %box-fonctionnement;
     justify-content: center;
     margin-left: 20px;
-    
+        
     .step{
       @include center;
       justify-content: center;
@@ -68,13 +89,22 @@ a{
       text-align: center;
       @include tranform-step;
       color:$color-footer;
+      @include desktop{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
       
   }
   .step2{
         transform: translateX(-170px);
+        @include desktop{
+          transform: translateX(-90px);
+        }
       }
   .fas{
     margin-right: 30px;
+    
   }
   }
 }
@@ -94,6 +124,9 @@ a{
       border-top-right-radius: 15px;
       height: 600px;
       z-index: 0;
+      @include desktop{
+        height: 400px;
+      }
     }
     figcaption{
       @include ligne;

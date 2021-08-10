@@ -1,9 +1,29 @@
 @keyframes affichage-menu {
     0%{
-        transform: opacity(0) 
+        transform: opacity(0); 
     }
     
     100%{
-        transform: opacity(1)
+        transform: opacity(1);
+    }
+}
+
+@keyframes check {
+    0%{
+        transform: translateX(-125px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes heart{
+    0%{
+        color: none;
+        transform: opacity(0);
+    }
+    100%{
+        color: $color-gradient;
+        transform:opacity(1);
     }
 }
