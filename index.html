@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="utf-8" />
     <title>Oh my food!</title>
-    <link href="/css/main.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./sass/vendors/main.css.map" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,7 +48,7 @@
 
     <section id="Fonctionnement">
       <h2>Fonctionnement</h2>
-
+      <div class="fonctionnement-box">
       <button>
         <div class="step step1">1</div>
         <i class="fas fa-mobile-alt"></i><h3></i>Choisissez un restaurant</h3>
@@ -62,17 +62,17 @@
       <button>
         <div class="step step3">3</div>
         <i class="fas fa-store"></i><h3>Dégustez au restaurant</h3>
-      </button>
+      </button></div>
     </section>
 
     <section id="Restaurants">
       <h2>Restaurants</h2>
-            
+      <div class="restaurants">    
       <a href="./palettedugout.html"
         ><figure>
           <img src="images/restaurants/palettedugout.jpg" alt="palettedugout" />
+          <div class="new"><p>Nouveau</p></div>
           <figcaption>
-            <div class="new"><p>Nouveau</p></div>
             <i class="far fa-heart"></i>
             <div class="figcaption-restau">
             <h3>La palette du goût</h3>
@@ -84,8 +84,9 @@
         <figure>
           
           <img src="images/restaurants/noteenchantee.jpg" alt="noteenchantee" />
+          <div class="new"><p>Nouveau</p></div>
           <figcaption>
-            <div class="new"><p>Nouveau</p></div>
+            
             <i class="far fa-heart"></i>
             <div class="figcaption-restau">
             <h3>La note enchantée</h3>
@@ -115,6 +116,7 @@
             </div>
           </figcaption></figure
       ></a>
+      </div>
     </section>
 
     <footer>

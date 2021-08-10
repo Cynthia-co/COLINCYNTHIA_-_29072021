@@ -31,6 +31,7 @@ a{
     box-shadow: 0px -7px 0px 0px darken($color: $color-background2, $amount: 2);
     @include desktop{
       width:400px;
+      height: 100px;
       background-color: lighten($color-tertiary, 15%);
       border-radius: 50px;
       box-shadow: none;
@@ -44,7 +45,7 @@ a{
     margin-top: 65px;
     @include desktop{
       
-      width: 700px;
+      width: 45%;
       height: auto;
     }
     p{
@@ -69,8 +70,13 @@ a{
   flex-direction: column;
   justify-content: center;
   background-color: $color-footer;
-  @include desktop{
-    display: block
+  .fonctionnement-box{
+    display: flex;
+    flex-direction: column;
+    @include desktop{
+      flex-flow: row wrap;
+      
+    }
   }
   
   button {
@@ -113,12 +119,18 @@ a{
   display: flex;
   flex-direction: column;
   background-color: $color-background2;
-  @include desktop{
-    flex-direction: row;
-    margin: 30px;
-  }
+ 
+   .restaurants{
+     @include desktop{
+       display: flex;
+       flex-flow:row wrap;
+       justify-content: space-around;
+       margin:30px;
+     }
+   }
   figure{
     @extend %box-restaurants;
+    
     &:hover{
       cursor: pointer;
     }
@@ -126,40 +138,49 @@ a{
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
-      height: 600px;
-      z-index: 0;
-      @include desktop{
-        width: 100%;
-        height: 75%;
-      }
+      width: 100%;
+      height: 70%;
+      z-index: 0;}
+    .new{
+        position: absolute;
+        background-color: $color-tertiary;
+        width: 150px;
+        height: 30px;
+      //  justify-self: flex-end;
+        margin: 10px;
+        z-index: 2;
+        padding: 10px;
+        right: 30PX;
+        p{
+          color:darken($color: $color-tertiary, $amount: 50);
+          font-weight: bold
+          font-size 20px;
+          transform: translateY(-40px);
+        }
     }
     figcaption{
       @include ligne;
       flex-direction: row-reverse;
       margin:30px;
       margin-top: 40px;
-      .new{
-        position: absolute;
-        background-color: $color-tertiary;
-        transform: translateY(-600px);
-        z-index: 2;
-        padding: 10px;
-        p{
-          color:darken($color: $color-tertiary, $amount: 50);
-          font-weight: bold
-        }
+      @include desktop{
+        margin-top: 10px;
       }
+      
       .figcaption-restau{
         @include figcaption-restau;
         p{
           font-size: 40px;
+          @include desktop{
+            font-size: 26px;
+          }
         }
       }
      
       .far {
         font-size: 70px;
         @include desktop{
-          font-size: 55px;
+          font-size: 43px;
         }
         }
     }

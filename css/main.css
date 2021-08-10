@@ -100,7 +100,7 @@ footer {
 }
 @media screen and (min-width: 1025px) {
   #Fonctionnement button {
-    width: 550px;
+    width: 380px;
     height: 100px;
   }
 }
@@ -123,11 +123,18 @@ footer {
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
 }
+@media screen and (min-width: 768px) {
+  #Restaurants figure {
+    width: 50%;
+    height: 50%;
+    flex-flow: row wrap;
+    margin: 30px;
+  }
+}
 @media screen and (min-width: 1025px) {
   #Restaurants figure {
-    width: 530px;
-    height: 530px;
-    flex-flow: row wrap;
+    width: 380px;
+    height: 310px;
     object-fit: cover;
   }
 }
@@ -281,7 +288,7 @@ footer p .fa-hands-helping {
 }
 @media screen and (min-width: 1025px) {
   #Fonctionnement button {
-    width: 550px;
+    width: 380px;
     height: 100px;
   }
 }
@@ -304,11 +311,18 @@ footer p .fa-hands-helping {
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
 }
+@media screen and (min-width: 768px) {
+  #Restaurants figure {
+    width: 50%;
+    height: 50%;
+    flex-flow: row wrap;
+    margin: 30px;
+  }
+}
 @media screen and (min-width: 1025px) {
   #Restaurants figure {
-    width: 530px;
-    height: 530px;
-    flex-flow: row wrap;
+    width: 380px;
+    height: 310px;
     object-fit: cover;
   }
 }
@@ -392,6 +406,7 @@ a {
 @media screen and (min-width: 1025px) {
   #noustrouver #localisation {
     width: 400px;
+    height: 100px;
     background-color: #d5f3eb;
     border-radius: 50px;
     box-shadow: none;
@@ -405,7 +420,7 @@ a {
 }
 @media screen and (min-width: 1025px) {
   #noustrouver #explorer {
-    width: 700px;
+    width: 45%;
     height: auto;
   }
 }
@@ -437,9 +452,13 @@ a {
   justify-content: center;
   background-color: #fff;
 }
+#Fonctionnement .fonctionnement-box {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1025px) {
-  #Fonctionnement {
-    display: block;
+  #Fonctionnement .fonctionnement-box {
+    flex-flow: row wrap;
   }
 }
 #Fonctionnement button {
@@ -490,8 +509,10 @@ a {
   background-color: #e9e9e9;
 }
 @media screen and (min-width: 1025px) {
-  #Restaurants {
-    flex-direction: row;
+  #Restaurants .restaurants {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     margin: 30px;
   }
 }
@@ -502,14 +523,24 @@ a {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 600px;
+  width: 100%;
+  height: 70%;
   z-index: 0;
 }
-@media screen and (min-width: 1025px) {
-  #Restaurants figure img {
-    width: 100%;
-    height: 75%;
-  }
+#Restaurants figure .new {
+  position: absolute;
+  background-color: #99e2d0;
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  z-index: 2;
+  padding: 10px;
+  right: 30PX;
+}
+#Restaurants figure .new p {
+  color: #1b6150;
+  font-weight: bold font-size 20px;
+  transform: translateY(-40px);
 }
 #Restaurants figure figcaption {
   display: flex;
@@ -518,16 +549,10 @@ a {
   margin: 30px;
   margin-top: 40px;
 }
-#Restaurants figure figcaption .new {
-  position: absolute;
-  background-color: #99e2d0;
-  transform: translateY(-600px);
-  z-index: 2;
-  padding: 10px;
-}
-#Restaurants figure figcaption .new p {
-  color: #1b6150;
-  font-weight: bold;
+@media screen and (min-width: 1025px) {
+  #Restaurants figure figcaption {
+    margin-top: 10px;
+  }
 }
 #Restaurants figure figcaption .figcaption-restau {
   display: flex;
@@ -537,12 +562,17 @@ a {
 #Restaurants figure figcaption .figcaption-restau p {
   font-size: 40px;
 }
+@media screen and (min-width: 1025px) {
+  #Restaurants figure figcaption .figcaption-restau p {
+    font-size: 26px;
+  }
+}
 #Restaurants figure figcaption .far {
   font-size: 70px;
 }
 @media screen and (min-width: 1025px) {
   #Restaurants figure figcaption .far {
-    font-size: 55px;
+    font-size: 43px;
   }
 }
 
@@ -648,7 +678,7 @@ footer {
 }
 @media screen and (min-width: 1025px) {
   #Fonctionnement button {
-    width: 550px;
+    width: 380px;
     height: 100px;
   }
 }
@@ -671,11 +701,18 @@ footer {
   border-radius: 20px;
   box-shadow: 0px 3px 0px 3px #c3c3c3;
 }
+@media screen and (min-width: 768px) {
+  #Restaurants figure {
+    width: 50%;
+    height: 50%;
+    flex-flow: row wrap;
+    margin: 30px;
+  }
+}
 @media screen and (min-width: 1025px) {
   #Restaurants figure {
-    width: 530px;
-    height: 530px;
-    flex-flow: row wrap;
+    width: 380px;
+    height: 310px;
     object-fit: cover;
   }
 }
