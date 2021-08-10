@@ -113,6 +113,10 @@ a{
   display: flex;
   flex-direction: column;
   background-color: $color-background2;
+  @include desktop{
+    flex-direction: row;
+    margin: 30px;
+  }
   figure{
     @extend %box-restaurants;
     &:hover{
@@ -125,7 +129,8 @@ a{
       height: 600px;
       z-index: 0;
       @include desktop{
-        height: 400px;
+        width: 100%;
+        height: 75%;
       }
     }
     figcaption{
@@ -153,7 +158,9 @@ a{
      
       .far {
         font-size: 70px;
-        
+        @include desktop{
+          font-size: 55px;
+        }
         }
     }
   }

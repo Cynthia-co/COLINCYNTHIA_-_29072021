@@ -48,8 +48,8 @@
     border-radius: 20px;
     @include box-shadow;
     @include desktop{
-        width: 632px;
-        height: 580px;
+        width: 530px;
+        height: 530px;
         flex-flow: row wrap;
         object-fit: cover;
     }
