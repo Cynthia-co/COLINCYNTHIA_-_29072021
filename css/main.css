@@ -195,7 +195,7 @@ footer {
   margin: 100px;
 }
 
-@keyframes affichage-menu {
+@keyframes fadein {
   0% {
     transform: opacity(0);
   }
@@ -203,7 +203,7 @@ footer {
     transform: opacity(1);
   }
 }
-@keyframes check {
+@keyframes slidein {
   0% {
     transform: translateX(-125px);
   }
@@ -214,11 +214,9 @@ footer {
 @keyframes heart {
   0% {
     color: none;
-    transform: opacity(0);
   }
   100% {
     color: linear-gradient(#ff79DA, #9356dc);
-    transform: opacity(1);
   }
 }
 header {
@@ -383,6 +381,30 @@ footer p .fa-hands-helping {
   margin: 100px;
 }
 
+@keyframes fadein {
+  0% {
+    transform: opacity(0);
+  }
+  100% {
+    transform: opacity(1);
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(-125px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    color: none;
+  }
+  100% {
+    color: linear-gradient(#ff79DA, #9356dc);
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -569,6 +591,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  width: 100%;
   margin: 30px;
   margin-top: 40px;
 }
@@ -597,6 +620,11 @@ a {
   #Restaurants figure figcaption .far {
     font-size: 43px;
   }
+}
+#Restaurants figure figcaption .far:hover {
+  background-color: linear-gradient(#ff79DA, #9356dc);
+  background-clip: txt;
+  animation: heart 200ms;
 }
 
 body {
@@ -796,7 +824,7 @@ footer {
   margin: 100px;
 }
 
-@keyframes affichage-menu {
+@keyframes fadein {
   0% {
     transform: opacity(0);
   }
@@ -804,7 +832,7 @@ footer {
     transform: opacity(1);
   }
 }
-@keyframes check {
+@keyframes slidein {
   0% {
     transform: translateX(-125px);
   }
@@ -815,11 +843,9 @@ footer {
 @keyframes heart {
   0% {
     color: none;
-    transform: opacity(0);
   }
   100% {
     color: linear-gradient(#ff79DA, #9356dc);
-    transform: opacity(1);
   }
 }
 .img-menu {
@@ -858,6 +884,12 @@ footer {
   margin-right: 20px;
   padding-right: 30px;
 }
+.title-restaurant .fa-heart:hover,
+.title-restaurant .fas-heart:hover {
+  background-color: linear-gradient(#ff79DA, #9356dc);
+  background-clip: txt;
+  animation: heart 200ms;
+}
 
 section {
   background-color: #e9e9e9;
@@ -887,12 +919,6 @@ section article {
   padding: 15px;
   margin-right: 10px;
   padding-bottom: 30px;
-  animation: affichage-menu 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-  -webkit-animation: affichage-menu 2s;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: both;
 }
 @media screen and (min-width: 1025px) {
   section article {
@@ -919,27 +945,38 @@ section article .ingredients__bottom {
 section article .ingredients__price:hover {
   transform: translateX(-130px);
 }
+section article .ingredients__delay-1 {
+  animation: fadein 200ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+section article .ingredients__delay-2 {
+  animation: fadein 200ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+}
+section article .ingredients__delay-3 {
+  animation: fadein 200ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+}
 section article .ingredients__check {
-  align-items: center;
-  display: flex;
-  align-self: flex-end;
-  position: absolute;
-  width: 125px;
-  height: 125px;
+  position: relative;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  width: 15%;
+  height: 100%;
   background-color: #99e2d0;
-  margin: 0;
-  padding-top: 0;
-  right: 20px;
-  translate: 10px;
-  visibility: hidden;
+}
+section article .ingredients__check .fa-check-circle {
+  background-color: #fff;
+  color: #99e2d0;
+  background-clip: txt;
 }
 section article .ingredients__check__check:hover {
-  visibility: visible;
-  animation: check 300ms ease-in-out;
+  animation: slidein 300ms ease-in-out;
   transition: 300ms;
-  color: #99e2d0;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=main.css.map */

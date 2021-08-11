@@ -38,6 +38,12 @@
   .fas-heart {
     margin-right: 20px;
     padding-right: 30px;
+    &:hover{
+      background-color: $color-gradient;
+      background-clip: txt;
+      animation: heart 200ms;
+      
+    }
   }
 }
 section {
@@ -65,12 +71,6 @@ section {
     padding: 15px;
     margin-right: 10px;
     padding-bottom: 30px;
-    animation: affichage-menu 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
-    -webkit-animation: affichage-menu 2s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-fill-mode: both;
     @include desktop{
         width: 550px;
     }
@@ -91,34 +91,48 @@ section {
           transform: translateX(-130px);
         }
       }
-
+      &__delay-1{
+        
+        animation: fadein 200ms;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 1s;
+      }
+      &__delay-2{
+        animation: fadein 200ms;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 2s;
+      }
+      &__delay-3{
+        animation: fadein 200ms;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 3s;
+      }
       &__check {
-        align-items: center;
-        display: flex;
-        align-self: flex-end;
-        position: absolute;
-        width: 125px;
-        height: 125px;
+        // align-items: center;
+        // display: flex;
+         position: relative;
+        // flex: 0 0 15%;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
+        // background-color:$color-tertiary ;
+        // color:#fff ;
+        // right: 20px;
+        // translate: 10px;
+        width: 15%;
+        height: 100%;
+        
         background-color: $color-tertiary;
-        margin: 0;
-        padding-top: 0;
-        right: 20px;
-        translate: 10px;
-        visibility: hidden;
-        // .fa-check-circle{
-        // position: absolute;
-        // justify-content: center;
-        // color: $color-tertiary;
-        // background-color: #fff;
-        // border:100px;}
-
-        &__check:hover {
-          visibility: visible;
-          animation: check 300ms ease-in-out;
-          transition: 300ms;
+        .fa-check-circle{
+          background-color: #fff;
           color: $color-tertiary;
+          background-clip:txt;
+        }
+        
+        &__check:hover {
+          animation: slidein 300ms ease-in-out;
+          transition: 300ms;
+          
+          transform: rotate(180deg);
         }
       }
     }

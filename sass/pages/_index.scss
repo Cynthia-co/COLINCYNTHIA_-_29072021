@@ -2,6 +2,7 @@
 @import "../Utils/mixins";
 @import "../Utils/extensions";
 @import "../components/buttons";
+@import "../components/keyframes";
 
 a{
   text-decoration: none;
@@ -171,7 +172,7 @@ a{
     figcaption{
       @include ligne;
       flex-direction: row-reverse;
-      
+      width: 100%;
       margin:30px;
       margin-top: 40px;
       @include desktop{
@@ -190,8 +191,15 @@ a{
      
       .far {
         font-size: 70px;
+
         @include desktop{
           font-size: 43px;
+        }
+        &:hover{
+          background-color: $color-gradient;
+          background-clip: txt;
+          animation: heart 200ms;
+          
         }
         }
     }

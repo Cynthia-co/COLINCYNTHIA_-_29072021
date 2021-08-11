@@ -1,4 +1,4 @@
-@keyframes affichage-menu {
+@keyframes fadein {
     0%{
         transform: opacity(0); 
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@keyframes check {
+@keyframes slidein {
     0%{
         transform: translateX(-125px);
     }
@@ -20,10 +20,10 @@
 @keyframes heart{
     0%{
         color: none;
-        transform: opacity(0);
+       
     }
     100%{
         color: $color-gradient;
-        transform:opacity(1);
+        
     }
 }
