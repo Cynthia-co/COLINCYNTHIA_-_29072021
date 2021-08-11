@@ -5,53 +5,55 @@
 @import "../components/buttons";
 @import "../components/keyframes";
 
-
-.img-menu{
-    @extend %img-menu;
-    position:relative;
-    z-index: -1;
+.img-menu {
+  @extend %img-menu;
+  position: relative;
+  z-index: -1;
 }
 
-.btn-color{
-   @include btn-color;
-
+.btn-color {
+  @include btn-color;
 }
 
+.title-restaurant {
+  position: absolute;
+  @extend %title-restaurant;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__heart-color {
+    color: transparent;
 
-.title-restaurant{
-    position: absolute;
-    @extend %title-restaurant;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__heart-color{
-        color: transparent;
-       
-        &:hover{
-            animation: heart;
-           
-        }
+    &:hover {
+      animation: heart;
     }
-    
-    h1{
-        margin-left: 10px;
-        padding-right: 30px;
-    }
-    .fa-heart, .fas-heart{
-        margin-right: 20px;
-        padding-right: 30px;     
-    }
+  }
+
+  h1 {
+    margin-left: 10px;
+    padding-right: 30px;
+  }
+  .fa-heart,
+  .fas-heart {
+    margin-right: 20px;
+    padding-right: 30px;
+  }
 }
 section {
-    background-color: $color-background2;
-    margin-bottom: 0;
-    margin-top: 40px;
-    padding-top: 50px;
-    
+  background-color: $color-background2;
+  margin-bottom: 0;
+  margin-top: 40px;
+  padding-top: 50px;
+  .menu{
+      display: flex;
+      @include desktop{
+          flex-direction: column;
+          width: 33%;
+      }
+  }
 
-       
-article{
+  article {
     @include colonne;
     background-color: $color-footer;
     box-shadow: 0px 4px 0px 4px #c3c3c3;
@@ -69,25 +71,28 @@ article{
     -webkit-animation: affichage-menu 2s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: both;
-      
-    h5, p{
-        margin: 0;
+    @include desktop{
+        width: 550px;
     }
-    .ingredients{
-        padding: 3px;
-        @include ingredients;
-    &__bottom{
-            @include ligne;
-            @include center;
-        }
-    &__price{
-        &:hover{
-            transform: translateX(-130px);
-        }
+
+    h5,
+    p {
+      margin: 0;
     }
-        
-    &__check{
-        
+    .ingredients {
+      padding: 3px;
+      @include ingredients;
+      &__bottom {
+        @include ligne;
+        @include center;
+      }
+      &__price {
+        &:hover {
+          transform: translateX(-130px);
+        }
+      }
+
+      &__check {
         align-items: center;
         display: flex;
         align-self: flex-end;
@@ -100,21 +105,22 @@ article{
         margin: 0;
         padding-top: 0;
         right: 20px;
-       translate: 10px;
+        translate: 10px;
         visibility: hidden;
         // .fa-check-circle{
-            // position: absolute;
-            // justify-content: center;
-            // color: $color-tertiary;
-            // background-color: #fff;
-            // border:100px;}
-        
-        &__check:hover{
-            visibility:visible;
-            animation: check 300ms ease-in-out;
-            transition: 300ms ;
-            color: $color-tertiary;
-         }
-}
-}}}
+        // position: absolute;
+        // justify-content: center;
+        // color: $color-tertiary;
+        // background-color: #fff;
+        // border:100px;}
 
+        &__check:hover {
+          visibility: visible;
+          animation: check 300ms ease-in-out;
+          transition: 300ms;
+          color: $color-tertiary;
+        }
+      }
+    }
+  }
+}

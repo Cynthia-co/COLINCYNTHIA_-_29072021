@@ -14,15 +14,12 @@ a{
   padding-top: 0;
   @include desktop{
     background: none;
+    flex-direction: column-reverse;
   }
   p{
     font-size: 40px;
   }
-  .fas{
-    @include center;
-    margin-right: 20px;
-  }
-
+ 
   #localisation {
     display: flex;
     background-color: $color-background2; 
@@ -32,10 +29,15 @@ a{
     @include desktop{
       width:400px;
       height: 100px;
-      background-color: lighten($color-tertiary, 15%);
+      background-color: $color-gradient;
       border-radius: 50px;
-      box-shadow: none;
       font-size: 35px;
+      
+    }
+    .fas{
+      @include center;
+      margin-right: 10px;
+     
     }
   }
   #explorer {
@@ -44,23 +46,30 @@ a{
     @extend %barre;
     margin-top: 65px;
     @include desktop{
-      
-      width: 45%;
+      background: none;
+      width: 1200px;
       height: auto;
+      margin-top: 30px;
     }
     p{
       font-size: 26px;
+      @include desktop{
+        font-size: 38px;
+      }
     }
     button .btn-color{
       @include btn-color;
     }
-    span {
+    &_br {
       display: block;
+      @include desktop{
+        display: inline;
+      }
     }
   @include desktop{
-    width: 40%;
+    width: 100%;
     justify-content: flex-start;
-    margin: 0;
+    margin-left: 200px;
   }
   }
 }
@@ -75,7 +84,6 @@ a{
     flex-direction: column;
     @include desktop{
       flex-flow: row wrap;
-      
     }
   }
   
@@ -99,13 +107,15 @@ a{
         width: 40px;
         height: 40px;
         font-size: 20px;
+        transform:translateX(-20px);
       }
       
   }
+ 
   .step2{
         transform: translateX(-170px);
         @include desktop{
-          transform: translateX(-90px);
+          transform:translateX(-20px);
         }
       }
   .fas{
@@ -161,6 +171,7 @@ a{
     figcaption{
       @include ligne;
       flex-direction: row-reverse;
+      
       margin:30px;
       margin-top: 40px;
       @include desktop{

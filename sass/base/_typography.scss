@@ -4,7 +4,12 @@
 body{
     font-family: "Roboto";
     width: 100%;
-    
+    @include medium-screen{
+        margin-left: 200px;
+    }
+    @include large{
+        margin-left: 400px;
+    }
 }
 
 h1{

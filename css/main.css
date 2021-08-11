@@ -2,6 +2,16 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
+@media screen and (min-width: ) {
+  body {
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: ) {
+  body {
+    margin-left: 400px;
+  }
+}
 
 h1 {
   font-family: "Shrikhand";
@@ -83,7 +93,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -125,8 +135,8 @@ footer {
 }
 @media screen and (min-width: 768px) {
   #Restaurants figure {
-    width: 50%;
-    height: 50%;
+    width: 92%;
+    height: 500px;
     flex-flow: row wrap;
     margin: 30px;
   }
@@ -175,9 +185,9 @@ footer {
 }
 @media screen and (min-width: 1025px) {
   .btn-color {
-    width: 350px;
-    height: auto;
-    font-size: 35px;
+    width: 616px;
+    height: 107px;
+    align-self: center;
   }
 }
 
@@ -271,7 +281,7 @@ footer p .fa-hands-helping {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -313,8 +323,8 @@ footer p .fa-hands-helping {
 }
 @media screen and (min-width: 768px) {
   #Restaurants figure {
-    width: 50%;
-    height: 50%;
+    width: 92%;
+    height: 500px;
     flex-flow: row wrap;
     margin: 30px;
   }
@@ -363,9 +373,9 @@ footer p .fa-hands-helping {
 }
 @media screen and (min-width: 1025px) {
   .btn-color {
-    width: 350px;
-    height: auto;
-    font-size: 35px;
+    width: 616px;
+    height: 107px;
+    align-self: center;
   }
 }
 
@@ -386,15 +396,11 @@ a {
 @media screen and (min-width: 1025px) {
   #noustrouver {
     background: none;
+    flex-direction: column-reverse;
   }
 }
 #noustrouver p {
   font-size: 40px;
-}
-#noustrouver .fas {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
 }
 #noustrouver #localisation {
   display: flex;
@@ -407,11 +413,15 @@ a {
   #noustrouver #localisation {
     width: 400px;
     height: 100px;
-    background-color: #d5f3eb;
+    background-color: linear-gradient(#ff79DA, #9356dc);
     border-radius: 50px;
-    box-shadow: none;
     font-size: 35px;
   }
+}
+#noustrouver #localisation .fas {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 #noustrouver #explorer {
   background-color: #f2F2F2;
@@ -420,12 +430,19 @@ a {
 }
 @media screen and (min-width: 1025px) {
   #noustrouver #explorer {
-    width: 45%;
+    background: none;
+    width: 1200px;
     height: auto;
+    margin-top: 30px;
   }
 }
 #noustrouver #explorer p {
   font-size: 26px;
+}
+@media screen and (min-width: 1025px) {
+  #noustrouver #explorer p {
+    font-size: 38px;
+  }
 }
 #noustrouver #explorer button .btn-color .btn-color {
   width: 300px;
@@ -435,14 +452,19 @@ a {
   margin: 20px;
   justify-content: center;
 }
-#noustrouver #explorer span {
+#noustrouver #explorer_br {
   display: block;
 }
 @media screen and (min-width: 1025px) {
+  #noustrouver #explorer_br {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1025px) {
   #noustrouver #explorer {
-    width: 40%;
+    width: 100%;
     justify-content: flex-start;
-    margin: 0;
+    margin-left: 200px;
   }
 }
 
@@ -489,6 +511,7 @@ a {
     width: 40px;
     height: 40px;
     font-size: 20px;
+    transform: translateX(-20px);
   }
 }
 #Fonctionnement button .step2 {
@@ -496,7 +519,7 @@ a {
 }
 @media screen and (min-width: 1025px) {
   #Fonctionnement button .step2 {
-    transform: translateX(-90px);
+    transform: translateX(-20px);
   }
 }
 #Fonctionnement button .fas {
@@ -580,6 +603,16 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
+@media screen and (min-width: ) {
+  body {
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: ) {
+  body {
+    margin-left: 400px;
+  }
+}
 
 h1 {
   font-family: "Shrikhand";
@@ -661,7 +694,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -703,8 +736,8 @@ footer {
 }
 @media screen and (min-width: 768px) {
   #Restaurants figure {
-    width: 50%;
-    height: 50%;
+    width: 92%;
+    height: 500px;
     flex-flow: row wrap;
     margin: 30px;
   }
@@ -753,9 +786,9 @@ footer {
 }
 @media screen and (min-width: 1025px) {
   .btn-color {
-    width: 350px;
-    height: auto;
-    font-size: 35px;
+    width: 616px;
+    height: 107px;
+    align-self: center;
   }
 }
 
@@ -820,7 +853,8 @@ footer {
   margin-left: 10px;
   padding-right: 30px;
 }
-.title-restaurant .fa-heart, .title-restaurant .fas-heart {
+.title-restaurant .fa-heart,
+.title-restaurant .fas-heart {
   margin-right: 20px;
   padding-right: 30px;
 }
@@ -830,6 +864,15 @@ section {
   margin-bottom: 0;
   margin-top: 40px;
   padding-top: 50px;
+}
+section .menu {
+  display: flex;
+}
+@media screen and (min-width: 1025px) {
+  section .menu {
+    flex-direction: column;
+    width: 33%;
+  }
 }
 section article {
   display: flex;
@@ -851,7 +894,13 @@ section article {
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: both;
 }
-section article h5, section article p {
+@media screen and (min-width: 1025px) {
+  section article {
+    width: 550px;
+  }
+}
+section article h5,
+section article p {
   margin: 0;
 }
 section article .ingredients {
