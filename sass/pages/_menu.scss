@@ -51,13 +51,7 @@ section {
   margin-bottom: 0;
   margin-top: 40px;
   padding-top: 50px;
-  .menu{
-      display: flex;
-      @include desktop{
-          flex-direction: column;
-          width: 33%;
-      }
-  }
+  
 
   article {
     @include colonne;
