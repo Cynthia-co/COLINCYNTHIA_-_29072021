@@ -76,5 +76,9 @@
     border-top-left-radius: 100px;
     padding-bottom: 10px;
     padding-left: 10px;
+    @include desktop{
+        display: flex;
+        justify-items: center;
+    }
 }
 

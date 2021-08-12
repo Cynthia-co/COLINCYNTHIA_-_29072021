@@ -15,7 +15,7 @@ a{
   padding-top: 0;
   @include desktop{
     background: none;
-    flex-direction: column-reverse;
+    
   }
   p{
     font-size: 40px;
@@ -28,12 +28,13 @@ a{
     font-size: 52px;
     box-shadow: 0px -7px 0px 0px darken($color: $color-background2, $amount: 2);
     @include desktop{
-      width:400px;
-      height: 100px;
+      width:320px;
+      height: 80px;
       background-color: $color-gradient;
       border-radius: 50px;
-      font-size: 35px;
-      
+      font-size: 25px;
+      align-content: center;
+      float: right;
     }
     .fas{
       @include center;
@@ -56,6 +57,7 @@ a{
       font-size: 26px;
       @include desktop{
         font-size: 38px;
+        margin: 15px;
       }
     }
     button .btn-color{
@@ -153,34 +155,47 @@ a{
       height: 70%;
       z-index: 0;}
     .new{
-        position: absolute;
+        // position: absolute;
         background-color: $color-tertiary;
         width: 150px;
-        height: 30px;
+        height: 50px;
       //  justify-self: flex-end;
-        margin: 10px;
+        // margin: 10px;
         z-index: 2;
-        padding: 10px;
-        right: 30PX;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        // padding: 10px;
+        transform: translate(410%, -680%);
+        @include desktop{
+          transform: translate(110%, -398%);
+        }
         p{
           color:darken($color: $color-tertiary, $amount: 50);
           font-weight: bold
           font-size 20px;
           transform: translateY(-40px);
+          
         }
     }
     figcaption{
       @include ligne;
+      position: fixed;
       flex-direction: row-reverse;
       width: 100%;
       margin:30px;
       margin-top: 40px;
       @include desktop{
-        margin-top: 10px;
+        margin-top:0;
       }
+     
       
       .figcaption-restau{
-        @include figcaption-restau;
+        @include figcaption-restau; 
+        @include desktop{
+        margin-top: 0;
+        padding-top: 0;
+      }
         p{
           font-size: 40px;
           @include desktop{
@@ -195,12 +210,12 @@ a{
         @include desktop{
           font-size: 43px;
         }
-        &:hover{
-          background-color: $color-gradient;
-          background-clip: txt;
-          animation: heart 200ms;
+        // &:hover{
+        //   background-color: $color-gradient;
+        //   background-clip: txt;
+        //   animation: heart 200ms;
           
-        }
+        // }
         }
     }
   }

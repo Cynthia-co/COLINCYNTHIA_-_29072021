@@ -51,8 +51,29 @@ section {
   margin-bottom: 0;
   margin-top: 40px;
   padding-top: 50px;
+  @include tablet{
+    background-color: none;
+  }
   
-
+  .menu{
+    @include medium-screen{
+      display: flex;
+      flex-flow: row wrap;
+      
+    }
+    &__part{
+    width: fit-content;
+    @include desktop{
+      display: flex;
+      flex-flow: row wrap;
+      h4{
+        width: 100%;
+      }
+      
+    }
+    }
+  }
+  
   article {
     @include colonne;
     background-color: $color-footer;
@@ -66,12 +87,17 @@ section {
     margin-right: 10px;
     padding-bottom: 30px;
     @include desktop{
-        width: 550px;
+        width: 600px;
+        height: min-content;
     }
-
+    @include medium-screen{
+      width: 880px;
+      height: 80px;
+    }
     h5,
     p {
       margin: 0;
+    
     }
     .ingredients {
       padding: 3px;
@@ -125,10 +151,10 @@ section {
         &__check:hover {
           animation: slidein 300ms ease-in-out;
           transition: 300ms;
-          
-          transform: rotate(180deg);
+          transform: rotate(360deg);
         }
       }
     }
   }
 }
+

@@ -20,10 +20,16 @@ header {
     img {
       width: 450px;
       height: auto;
+      @include desktop{
+        width: 300px;
+      }
     }
   }
   .fas {
     font-size: 50px;
+    @include desktop{
+      font-size: 30px;
+    }
   }
  
 }

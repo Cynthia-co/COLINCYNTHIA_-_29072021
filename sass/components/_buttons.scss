@@ -19,13 +19,17 @@
        box-shadow: 8px 8px 0px 0px darken($color: #c3c3c3, $amount: 2);
     }
     @include desktop{
-        width: 616px;
-        height: 107px;
+        width: 580px;
+        height: 87px;
         align-self: center;
     }
 }
 
 .btn-color-command{
     margin:100px;
+    @include desktop{
+        display: flex;
+        justify-items: center;
+    }
 }
 
