@@ -3,7 +3,7 @@
 @import "../Utils/variables";
 @import "../Utils/extensions";
 @import "../components/buttons";
-@import "../components/keyframes";
+
 
 .img-menu {
   @extend %img-menu;
@@ -42,7 +42,6 @@
       background-color: $color-gradient;
       background-clip: txt;
       animation: heart 200ms;
-      
     }
   }
 }
@@ -100,6 +99,22 @@ section {
     
     }
     .ingredients {
+      &__delay-1{
+        
+        animation: fadein 200ms both;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 0s;
+      }
+      &__delay-2{
+        animation: fadein 200ms both;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 1s;
+      }
+      &__delay-3{
+        animation: fadein 200ms both;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 2s;
+      }
       padding: 3px;
       @include ingredients;
       &__bottom {
@@ -111,22 +126,7 @@ section {
           transform: translateX(-130px);
         }
       }
-      &__delay-1{
-        
-        animation: fadein 200ms;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 1s;
-      }
-      &__delay-2{
-        animation: fadein 200ms;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 2s;
-      }
-      &__delay-3{
-        animation: fadein 200ms;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 3s;
-      }
+      
       &__check {
         // align-items: center;
         // display: flex;

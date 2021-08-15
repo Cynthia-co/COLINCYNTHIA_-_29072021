@@ -1,10 +1,10 @@
 @keyframes fadein {
     0%{
-        transform: opacity(0); 
+      opacity:0; 
     }
     
     100%{
-        transform: opacity(1);
+        opacity:1;
     }
 }
 
