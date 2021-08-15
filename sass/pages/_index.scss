@@ -180,7 +180,6 @@ a{
     }
     figcaption{
       @include ligne;
-      position: fixed;
       flex-direction: row-reverse;
       width: 100%;
       margin:30px;
@@ -188,8 +187,7 @@ a{
       @include desktop{
         margin-top:0;
       }
-     
-      
+          
       .figcaption-restau{
         @include figcaption-restau; 
         @include desktop{
@@ -220,3 +218,12 @@ a{
     }
   }
 } 
+
+ 
+.fa-heart:hover::before{
+  color:linear-gradient($color-secondary, $color-primary);
+  background-clip: txt;
+  cursor: pointer;
+transition: color 1s ease-out;
+font-weight: bold;
+}

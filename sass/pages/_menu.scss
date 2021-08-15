@@ -3,6 +3,7 @@
 @import "../Utils/variables";
 @import "../Utils/extensions";
 @import "../components/buttons";
+@import "../components/keyframes";
 
 
 .img-menu {
@@ -34,17 +35,17 @@
     margin-left: 10px;
     padding-right: 30px;
   }
-  .fa-heart,
-  .fas-heart {
-    margin-right: 20px;
-    padding-right: 30px;
-    &:hover{
-      background-color: $color-gradient;
-      background-clip: txt;
-      animation: heart 200ms;
-    }
+  // .fa-heart,
+  // .fas-heart {
+  //   margin-right: 20px;
+  //   padding-right: 30px;
+  //   &:hover{
+  //     background-color: $color-gradient;
+  //     background-clip: txt;
+  //     animation: heart 200ms;
+  //   }
   }
-}
+
 section {
   background-color: $color-background2;
   margin-bottom: 0;
@@ -73,7 +74,7 @@ section {
     }
   }
   
-  article {
+  .ingredients {
     @include colonne;
     background-color: $color-footer;
     box-shadow: 0px 4px 0px 4px #c3c3c3;
@@ -98,24 +99,8 @@ section {
       margin: 0;
     
     }
-    .ingredients {
-      &__delay-1{
-        
-        animation: fadein 200ms both;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 0s;
-      }
-      &__delay-2{
-        animation: fadein 200ms both;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 1s;
-      }
-      &__delay-3{
-        animation: fadein 200ms both;
-        animation-timing-function: ease-in-out; 
-        animation-delay: 2s;
-      }
-      padding: 3px;
+    
+     
       @include ingredients;
       &__bottom {
         @include ligne;
@@ -126,7 +111,22 @@ section {
           transform: translateX(-130px);
         }
       }
-      
+      &__delay-1{
+        
+        animation: fadein 200ms both;
+        animation-timing-function:ease-in-out; 
+        animation-delay: 0s;
+      }
+      &__delay-2{
+        animation: fadein 200ms both;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 300ms;
+      }
+      &__delay-3{
+        animation: fadein 200ms both;
+        animation-timing-function: ease-in-out; 
+        animation-delay: 600ms;
+      } 
       &__check {
         // align-items: center;
         // display: flex;
@@ -153,8 +153,9 @@ section {
           transition: 300ms;
           transform: rotate(360deg);
         }
+       
       }
     }
   }
-}
+
 

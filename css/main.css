@@ -216,6 +216,9 @@ footer {
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0.7;
+  }
   100% {
     opacity: 1;
   }
@@ -612,7 +615,6 @@ a {
 #Restaurants figure figcaption {
   display: flex;
   justify-content: space-between;
-  position: fixed;
   flex-direction: row-reverse;
   width: 100%;
   margin: 30px;
@@ -649,6 +651,14 @@ a {
   #Restaurants figure figcaption .far {
     font-size: 43px;
   }
+}
+
+.fa-heart:hover::before {
+  color: linear-gradient(#ff79DA, #9356dc);
+  background-clip: txt;
+  cursor: pointer;
+  transition: color 1s ease-out;
+  font-weight: bold;
 }
 
 body {
@@ -865,6 +875,33 @@ footer {
   }
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(-125px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    color: none;
+  }
+  100% {
+    color: linear-gradient(#ff79DA, #9356dc);
+  }
+}
 .img-menu {
   position: relative;
   z-index: -1;
@@ -896,17 +933,6 @@ footer {
   margin-left: 10px;
   padding-right: 30px;
 }
-.title-restaurant .fa-heart,
-.title-restaurant .fas-heart {
-  margin-right: 20px;
-  padding-right: 30px;
-}
-.title-restaurant .fa-heart:hover,
-.title-restaurant .fas-heart:hover {
-  background-color: linear-gradient(#ff79DA, #9356dc);
-  background-clip: txt;
-  animation: heart 200ms;
-}
 
 section {
   background-color: #e9e9e9;
@@ -937,7 +963,7 @@ section .menu__part {
     width: 100%;
   }
 }
-section article {
+section .ingredients {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -950,55 +976,52 @@ section article {
   padding: 15px;
   margin-right: 10px;
   padding-bottom: 30px;
-}
-@media screen and (min-width: 1024px) {
-  section article {
-    width: 600px;
-    height: min-content;
-  }
-}
-@media screen and (min-width: ) {
-  section article {
-    width: 880px;
-    height: 80px;
-  }
-}
-section article h5,
-section article p {
-  margin: 0;
-}
-section article .ingredients {
-  padding: 3px;
   background: #fff;
   display: flex;
   border-color: black;
   box-shadow: 0px 2px 0px 2px #c3c3c3;
 }
-section article .ingredients__delay-1 {
-  animation: fadein 200ms both;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
+@media screen and (min-width: 1024px) {
+  section .ingredients {
+    width: 600px;
+    height: min-content;
+  }
 }
-section article .ingredients__delay-2 {
-  animation: fadein 200ms both;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
+@media screen and (min-width: ) {
+  section .ingredients {
+    width: 880px;
+    height: 80px;
+  }
 }
-section article .ingredients__delay-3 {
-  animation: fadein 200ms both;
-  animation-timing-function: ease-in-out;
-  animation-delay: 2s;
+section .ingredients h5,
+section .ingredients p {
+  margin: 0;
 }
-section article .ingredients__bottom {
+section .ingredients__bottom {
   display: flex;
   justify-content: space-between;
   display: flex;
   align-items: center;
 }
-section article .ingredients__price:hover {
+section .ingredients__price:hover {
   transform: translateX(-130px);
 }
-section article .ingredients__check {
+section .ingredients__delay-1 {
+  animation: fadein 200ms both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+section .ingredients__delay-2 {
+  animation: fadein 200ms both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 300ms;
+}
+section .ingredients__delay-3 {
+  animation: fadein 200ms both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 600ms;
+}
+section .ingredients__check {
   position: relative;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -1006,12 +1029,12 @@ section article .ingredients__check {
   height: 100%;
   background-color: #99e2d0;
 }
-section article .ingredients__check .fa-check-circle {
+section .ingredients__check .fa-check-circle {
   background-color: #fff;
   color: #99e2d0;
   background-clip: txt;
 }
-section article .ingredients__check__check:hover {
+section .ingredients__check__check:hover {
   animation: slidein 300ms ease-in-out;
   transition: 300ms;
   transform: rotate(360deg);
