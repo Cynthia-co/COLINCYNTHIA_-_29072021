@@ -6,15 +6,23 @@ body{
     width: 100%;
     @include medium-screen{
         margin-left: 200px;
+        margin-right: 200px;
+        width: 80%;
     }
     @include large{
+        width:80%;
         margin-left: 400px;
+        margin-right: 400px;
+        height: 100%;
     }
 }
 
 h1{
     font-family: "Shrikhand";
     font-size: 72px;
+    @include desktop{
+        font-size: 50px;
+    }
 }
 
 h2{
@@ -23,7 +31,8 @@ h2{
     margin-left: 20px;
     @include desktop{
         font-size: 35px;
-        
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 p{
@@ -42,7 +51,6 @@ h3{
     }
 }
 figcaption{
-    
     p{
         font-size: 35px;
         margin: 3px;
@@ -52,16 +60,21 @@ h4{
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 10px;
-    
     width: fit-content;
     font-size: 40px;
     margin-left: 10px;
+    @include desktop{
+        font-size: 30px;
+    }
     &::after{
         content:"";
         border-bottom: 5px solid $color-tertiary;
         width: 94px;
         display: block;
         padding-top: 3px;
+        @include desktop{
+            width: 84px;
+        }
     }
 }
 

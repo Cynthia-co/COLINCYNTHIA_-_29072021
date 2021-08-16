@@ -20,16 +20,19 @@
     }
     @include desktop{
         width: 580px;
-        height: 87px;
+        height: 67px;
+        font-size: 35px;
         align-self: center;
     }
 }
 
 .btn-color-command{
     margin:100px;
-    @include desktop{
+        @include desktop{
         display: flex;
         justify-items: center;
+        margin-left: 30%;
+        background-color: $color-background1;
     }
 }
 

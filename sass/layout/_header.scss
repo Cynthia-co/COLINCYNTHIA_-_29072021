@@ -5,12 +5,19 @@ header {
   background-color: white;
   border-bottom: 2px;
   width: 100%;
+  @include desktop{
+    
+    height: 80px;
+  }
  .header__menu {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
     margin-right: 180px;
+    @include desktop{
+      justify-content: center;
+    }
   }
   figure {
     display: flex;
@@ -21,14 +28,14 @@ header {
       width: 450px;
       height: auto;
       @include desktop{
-        width: 300px;
+        width: 200px;
       }
     }
   }
   .fas {
     font-size: 50px;
     @include desktop{
-      font-size: 30px;
+      font-size: 25px;
     }
   }
  

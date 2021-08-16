@@ -23,14 +23,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__heart-color {
-    color: transparent;
-
-    &:hover {
-      animation: heart;
-    }
+  @include desktop{
+    justify-content: center;
   }
-
+  @include large{
+    width: 80%;
+  }
+  
   h1 {
     margin-left: 10px;
     padding-right: 30px;
@@ -42,10 +41,10 @@ section {
   margin-bottom: 0;
   margin-top: 40px;
   padding-top: 50px;
-  @include tablet{
-    background-color: none;
-  }
-  
+  @include desktop{
+    margin-top: 66px;
+    padding-top: 20px;
+  }  
   .menu{
     @include medium-screen{
       display: flex;
@@ -58,8 +57,7 @@ section {
       flex-flow: row wrap;
       h4{
         width: 100%;
-      }
-      
+      } 
     }
     }
   }
@@ -84,6 +82,8 @@ section {
     @include desktop{
         width: 600px;
         height: min-content;
+        margin: 20px;
+        padding-bottom: 15px;
     }
     @include medium-screen{
       width: 880px;

@@ -5,17 +5,27 @@ body {
 @media screen and (min-width: ) {
   body {
     margin-left: 200px;
+    margin-right: 200px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 2550px) {
   body {
+    width: 80%;
     margin-left: 400px;
+    margin-right: 400px;
+    height: 100%;
   }
 }
 
 h1 {
   font-family: "Shrikhand";
   font-size: 72px;
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -26,6 +36,8 @@ h2 {
 @media screen and (min-width: 1024px) {
   h2 {
     font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -62,12 +74,22 @@ h4 {
   font-size: 40px;
   margin-left: 10px;
 }
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 30px;
+  }
+}
 h4::after {
   content: "";
   border-bottom: 5px solid #99e2d0;
   width: 94px;
   display: block;
   padding-top: 3px;
+}
+@media screen and (min-width: 1024px) {
+  h4::after {
+    width: 84px;
+  }
 }
 
 h5, .price {
@@ -127,7 +149,7 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 380px;
+    width: 580px;
     height: 100px;
   }
 }
@@ -171,6 +193,11 @@ footer {
   height: 465px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .img-menu {
+    height: 190px;
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -179,12 +206,15 @@ footer {
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
   padding-bottom: 10px;
-  padding-left: 10px;
 }
 @media screen and (min-width: 1024px) {
   .title-restaurant {
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
+    transform: translateY(155px);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -209,7 +239,8 @@ footer {
 @media screen and (min-width: 1024px) {
   .btn-color {
     width: 580px;
-    height: 87px;
+    height: 67px;
+    font-size: 35px;
     align-self: center;
   }
 }
@@ -221,6 +252,8 @@ footer {
   .btn-color-command {
     display: flex;
     justify-items: center;
+    margin-left: 30%;
+    background-color: #f2F2F2;
   }
 }
 
@@ -283,12 +316,22 @@ header {
   border-bottom: 2px;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  header {
+    height: 80px;
+  }
+}
 header .header__menu {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: center;
   margin-right: 180px;
+}
+@media screen and (min-width: 1024px) {
+  header .header__menu {
+    justify-content: center;
+  }
 }
 header figure {
   display: flex;
@@ -302,7 +345,7 @@ header figure img {
 }
 @media screen and (min-width: 1024px) {
   header figure img {
-    width: 300px;
+    width: 200px;
   }
 }
 header .fas {
@@ -310,7 +353,7 @@ header .fas {
 }
 @media screen and (min-width: 1024px) {
   header .fas {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -365,7 +408,7 @@ footer p .fa-hands-helping {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 380px;
+    width: 580px;
     height: 100px;
   }
 }
@@ -409,6 +452,11 @@ footer p .fa-hands-helping {
   height: 465px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .img-menu {
+    height: 190px;
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -417,12 +465,15 @@ footer p .fa-hands-helping {
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
   padding-bottom: 10px;
-  padding-left: 10px;
 }
 @media screen and (min-width: 1024px) {
   .title-restaurant {
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
+    transform: translateY(155px);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -447,7 +498,8 @@ footer p .fa-hands-helping {
 @media screen and (min-width: 1024px) {
   .btn-color {
     width: 580px;
-    height: 87px;
+    height: 67px;
+    font-size: 35px;
     align-self: center;
   }
 }
@@ -459,6 +511,8 @@ footer p .fa-hands-helping {
   .btn-color-command {
     display: flex;
     justify-items: center;
+    margin-left: 30%;
+    background-color: #f2F2F2;
   }
 }
 
@@ -522,7 +576,8 @@ a {
 }
 @media screen and (min-width: 1024px) {
   #noustrouver {
-    background: none;
+    background-color: #f3f3f3;
+    margin-top: 20px;
   }
 }
 #noustrouver p {
@@ -538,12 +593,17 @@ a {
 @media screen and (min-width: 1024px) {
   #noustrouver #localisation {
     width: 320px;
-    height: 80px;
+    height: 50px;
     background-color: linear-gradient(#ff79DA, #9356dc);
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 20px;
     align-content: center;
-    float: right;
+    text-align: center;
+    transform: translateY(-120%);
+    margin-left: 40px;
+  }
+  #noustrouver #localisation p {
+    font-size: 20px;
   }
 }
 #noustrouver #localisation .fas {
@@ -561,7 +621,7 @@ a {
     background: none;
     width: 1200px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 #noustrouver #explorer p {
@@ -570,7 +630,7 @@ a {
 @media screen and (min-width: 1024px) {
   #noustrouver #explorer p {
     font-size: 38px;
-    margin: 15px;
+    margin: 0px;
   }
 }
 #noustrouver #explorer button .btn-color .btn-color {
@@ -602,6 +662,11 @@ a {
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  #Fonctionnement {
+    margin: 5px;
+  }
 }
 #Fonctionnement .fonctionnement-box {
   display: flex;
@@ -757,17 +822,27 @@ body {
 @media screen and (min-width: ) {
   body {
     margin-left: 200px;
+    margin-right: 200px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 2550px) {
   body {
+    width: 80%;
     margin-left: 400px;
+    margin-right: 400px;
+    height: 100%;
   }
 }
 
 h1 {
   font-family: "Shrikhand";
   font-size: 72px;
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -778,6 +853,8 @@ h2 {
 @media screen and (min-width: 1024px) {
   h2 {
     font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -814,12 +891,22 @@ h4 {
   font-size: 40px;
   margin-left: 10px;
 }
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 30px;
+  }
+}
 h4::after {
   content: "";
   border-bottom: 5px solid #99e2d0;
   width: 94px;
   display: block;
   padding-top: 3px;
+}
+@media screen and (min-width: 1024px) {
+  h4::after {
+    width: 84px;
+  }
 }
 
 h5, .price {
@@ -879,7 +966,7 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 380px;
+    width: 580px;
     height: 100px;
   }
 }
@@ -923,6 +1010,11 @@ footer {
   height: 465px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .img-menu {
+    height: 190px;
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -931,12 +1023,15 @@ footer {
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
   padding-bottom: 10px;
-  padding-left: 10px;
 }
 @media screen and (min-width: 1024px) {
   .title-restaurant {
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
+    transform: translateY(155px);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -961,7 +1056,8 @@ footer {
 @media screen and (min-width: 1024px) {
   .btn-color {
     width: 580px;
-    height: 87px;
+    height: 67px;
+    font-size: 35px;
     align-self: center;
   }
 }
@@ -973,6 +1069,8 @@ footer {
   .btn-color-command {
     display: flex;
     justify-items: center;
+    margin-left: 30%;
+    background-color: #f2F2F2;
   }
 }
 
@@ -1051,11 +1149,15 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.title-restaurant__heart-color {
-  color: transparent;
+@media screen and (min-width: 1024px) {
+  .title-restaurant {
+    justify-content: center;
+  }
 }
-.title-restaurant__heart-color:hover {
-  animation: heart;
+@media screen and (min-width: 2550px) {
+  .title-restaurant {
+    width: 80%;
+  }
 }
 .title-restaurant h1 {
   margin-left: 10px;
@@ -1068,9 +1170,10 @@ section {
   margin-top: 40px;
   padding-top: 50px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   section {
-    background-color: none;
+    margin-top: 66px;
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: ) {
@@ -1118,6 +1221,8 @@ section .ingredients:hover .ingredients__price {
   section .ingredients {
     width: 600px;
     height: min-content;
+    margin: 20px;
+    padding-bottom: 15px;
   }
 }
 @media screen and (min-width: ) {

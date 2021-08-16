@@ -25,7 +25,7 @@
     font-size: $font-size;
     z-index: 0;
     @include desktop{
-        width: 380px;
+        width: 580px;
         height: 100px;
     }
     &:hover{
@@ -66,6 +66,9 @@
     width: 100%;
     height: 465px;
     object-fit: cover;
+    @include desktop{
+        height: 190px;
+    }
 }
 
 %title-restaurant{
@@ -75,10 +78,13 @@
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
     padding-bottom: 10px;
-    padding-left: 10px;
     @include desktop{
         display: flex;
-        justify-items: center;
+        justify-content: space-around;
+        transform: translateY(155px);
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        padding-bottom: 0;
     }
 }
 
