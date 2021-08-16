@@ -1,3 +1,33 @@
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opacity-reverse{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 @keyframes fadein {
     0%{
       opacity:0; 
@@ -21,11 +51,11 @@
 
 @keyframes heart{
     0%{
-        color: none;
+        background-color: none;
        
     }
     100%{
-        color: $color-gradient;
+        background-color: $color-gradient;
         
     }
 }

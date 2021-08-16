@@ -9,6 +9,45 @@ a{
   color: black;
 }
 
+.page{
+  animation: opacity 5s ease-out;
+}
+
+.loader-page{
+  animation: opacity-reverse 5s ease-in forwards;
+}
+
+.loader{
+  border: 3px solid transparent;
+  border-top:  3px solid $color-primary;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position:absolute;
+  top:0; right: 0; bottom: 0; left: 0;
+  animation: spin 3s linear infinite;
+  &::after{
+    content: "";
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid $color-secondary;
+    top:6px; right: 6px; bottom: 6px; left: 6px;
+    animation: spin 2.5s linear infinite;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid $color-tertiary;
+    opacity: 0.6;
+    top:10px; right: 10px; bottom: 10px; left: 10px;
+    animation: spin 2s linear infinite;
+  }
+}
+
 #noustrouver {
   display: flex;
   flex-direction: column;
@@ -221,9 +260,11 @@ a{
 
  
 .fa-heart:hover::before{
-  color:linear-gradient($color-secondary, $color-primary);
-  background-clip: txt;
-  cursor: pointer;
-transition: color 1s ease-out;
-font-weight: bold;
+  animation: heart;
+  animation-timing-function: ease-in-out;
+//   background-color:$color-gradient;
+//   background-clip: txt;
+//   cursor: pointer;
+// transition: color 1s ease-out;
+// font-weight: bold;
 }
