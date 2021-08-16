@@ -1099,10 +1099,15 @@ section .ingredients {
   padding: 15px;
   margin-right: 10px;
   padding-bottom: 30px;
+  overflow: hidden;
+  position: relative;
   background: #fff;
   display: flex;
   border-color: black;
   box-shadow: 0px 2px 0px 2px #c3c3c3;
+}
+section .ingredients:hover .ingredients__price {
+  transform: translateX(-130px);
 }
 @media screen and (min-width: 1024px) {
   section .ingredients {
@@ -1119,15 +1124,13 @@ section .ingredients {
 section .ingredients h5,
 section .ingredients p {
   margin: 0;
+  text-overflow: ellipsis;
 }
 section .ingredients__bottom {
   display: flex;
   justify-content: space-between;
   display: flex;
   align-items: center;
-}
-section .ingredients__price:hover {
-  transform: translateX(-130px);
 }
 section .ingredients__delay-1 {
   animation: fadein 200ms both;
@@ -1145,22 +1148,35 @@ section .ingredients__delay-3 {
   animation-delay: 600ms;
 }
 section .ingredients__check {
-  position: relative;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 15%;
-  height: 100%;
+  float: right;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  transition: width 1s;
   background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-section .ingredients__check .fa-check-circle {
-  background-color: #fff;
-  color: #99e2d0;
-  background-clip: txt;
+section .ingredients__check i {
+  display: block;
+  opacity: 0;
+  transform: rotate(-270deg);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-section .ingredients__check__check:hover {
-  animation: slidein 300ms ease-in-out;
-  transition: 300ms;
-  transform: rotate(360deg);
+section .ingredients:hover .ingredients__check {
+  background: #9ed;
+  width: 20%;
+}
+section .ingredients:hover .ingredients__check i {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+section .ingredients:hover .ingredients__repas {
+  width: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */

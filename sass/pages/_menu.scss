@@ -59,7 +59,6 @@ section {
     @include medium-screen{
       display: flex;
       flex-flow: row wrap;
-      
     }
     &__part{
     width: fit-content;
@@ -86,6 +85,11 @@ section {
     padding: 15px;
     margin-right: 10px;
     padding-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    &:hover .ingredients__price{
+      transform: translateX(-130px);
+    }
     @include desktop{
         width: 600px;
         height: min-content;
@@ -97,19 +101,13 @@ section {
     h5,
     p {
       margin: 0;
-    
+      text-overflow: ellipsis;
     }
-    
-     
+         
       @include ingredients;
       &__bottom {
         @include ligne;
         @include center;
-      }
-      &__price {
-        &:hover {
-          transform: translateX(-130px);
-        }
       }
       &__delay-1{
         
@@ -128,34 +126,36 @@ section {
         animation-delay: 600ms;
       } 
       &__check {
-        // align-items: center;
-        // display: flex;
-         position: relative;
-        // flex: 0 0 15%;
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-        // background-color:$color-tertiary ;
-        // color:#fff ;
-        // right: 20px;
-        // translate: 10px;
-        width: 15%;
-        height: 100%;
-        
+        float : right; position : absolute; top : 0; bottom : 0; right : 0; width : 0;
+        transition : width 1s;
         background-color: $color-tertiary;
-        .fa-check-circle{
-          background-color: #fff;
-          color: $color-tertiary;
-          background-clip:txt;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        align-content : center;
+        i {
+          display : block;
+          opacity : 0;
+          transform : rotate(-270deg);
+          transition : opacity 1s ease-in-out, transform 1s ease-in-out;
+         
         }
-        
-        &__check:hover {
-          animation: slidein 300ms ease-in-out;
-          transition: 300ms;
-          transform: rotate(360deg);
-        }
-       
       }
-    }
-  }
+        &:hover .ingredients__check{
+          background:  #9ed;
+          width: 20%;
+        }
+        &:hover .ingredients__check i{
+            opacity: 1;
+            transform : rotate(0deg);
+          
+        }
+        &:hover .ingredients__repas{
+          width: 80%;
+        }
+      }
 
+
+    }
+  
 
