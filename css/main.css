@@ -83,6 +83,16 @@ title-menu {
   border-bottom: 2px solid #99e2d0;
 }
 
+.new {
+  font-weight: bold;
+  font-size: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .new {
+    font-size: 20px;
+  }
+}
+
 footer {
   color: #fff;
 }
@@ -244,7 +254,7 @@ footer {
     opacity: 0;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -263,7 +273,7 @@ footer {
     background-color: none;
   }
   100% {
-    background-color: linear-gradient(#ff79DA, #9356dc);
+    color: linear-gradient(#ff79DA, #9356dc);
   }
 }
 header {
@@ -456,19 +466,19 @@ a {
 }
 
 .page {
-  animation: opacity 5s ease-out;
+  animation: opacity 3s ease-out;
 }
 
 .loader-page {
-  animation: opacity-reverse 5s ease-in forwards;
+  animation: opacity-reverse 3s ease-in forwards;
 }
 
 .loader {
-  border: 3px solid transparent;
-  border-top: 3px solid #9356dc;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356dc;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -480,7 +490,7 @@ a {
 .loader::after {
   content: "";
   position: absolute;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
   border-radius: 50%;
   border-top: 3px solid #ff79DA;
   top: 6px;
@@ -492,7 +502,7 @@ a {
 .loader::before {
   content: "";
   position: absolute;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
   border-radius: 50%;
   border-top: 3px solid #99e2d0;
   opacity: 0.6;
@@ -668,26 +678,25 @@ a {
   z-index: 0;
 }
 #Restaurants figure .new {
+  position: absolute;
   background-color: #99e2d0;
-  width: 150px;
-  height: 50px;
+  width: 195px;
+  height: 65px;
   z-index: 2;
   display: flex;
   justify-content: center;
-  align-content: center;
-  transform: translate(410%, -680%);
+  align-items: center;
+  color: #1b6150;
+  transform: translateY(-360px);
 }
 @media screen and (min-width: 1024px) {
   #Restaurants figure .new {
-    transform: translate(110%, -398%);
+    transform: translateY(-180px);
+    width: 120px;
+    height: auto;
   }
 }
-#Restaurants figure .new p {
-  color: #1b6150;
-  font-weight: bold font-size 20px;
-  transform: translateY(-40px);
-}
-#Restaurants figure figcaption {
+#Restaurants figcaption {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -696,41 +705,46 @@ a {
   margin-top: 40px;
 }
 @media screen and (min-width: 1024px) {
-  #Restaurants figure figcaption {
+  #Restaurants figcaption {
     margin-top: 0;
   }
 }
-#Restaurants figure figcaption .figcaption-restau {
+#Restaurants figcaption .figcaption-restau {
   display: flex;
   flex-direction: column;
   font-size: 1em;
 }
 @media screen and (min-width: 1024px) {
-  #Restaurants figure figcaption .figcaption-restau {
+  #Restaurants figcaption .figcaption-restau {
     margin-top: 0;
     padding-top: 0;
   }
 }
-#Restaurants figure figcaption .figcaption-restau p {
+#Restaurants figcaption .figcaption-restau p {
   font-size: 40px;
 }
 @media screen and (min-width: 1024px) {
-  #Restaurants figure figcaption .figcaption-restau p {
+  #Restaurants figcaption .figcaption-restau p {
     font-size: 26px;
   }
 }
-#Restaurants figure figcaption .far {
+#Restaurants figcaption .far {
   font-size: 70px;
 }
 @media screen and (min-width: 1024px) {
-  #Restaurants figure figcaption .far {
+  #Restaurants figcaption .far {
     font-size: 43px;
   }
 }
 
-.fa-heart:hover::before {
+.fa-heart:hover::after {
   animation: heart;
   animation-timing-function: ease-in-out;
+  background-clip: txt;
+  cursor: pointer;
+  color: linear-gradient(#ff79DA, #9356dc);
+  transition: color 1s ease-out;
+  font-weight: bold;
 }
 
 body {
@@ -816,6 +830,16 @@ h5, .price {
 title-menu {
   text-transform: uppercase;
   border-bottom: 2px solid #99e2d0;
+}
+
+.new {
+  font-weight: bold;
+  font-size: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .new {
+    font-size: 20px;
+  }
 }
 
 footer {
@@ -979,7 +1003,7 @@ footer {
     opacity: 0;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -998,7 +1022,7 @@ footer {
     background-color: none;
   }
   100% {
-    background-color: linear-gradient(#ff79DA, #9356dc);
+    color: linear-gradient(#ff79DA, #9356dc);
   }
 }
 .img-menu {

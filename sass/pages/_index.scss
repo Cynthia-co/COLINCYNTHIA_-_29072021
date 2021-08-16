@@ -10,19 +10,19 @@ a{
 }
 
 .page{
-  animation: opacity 5s ease-out;
+  animation: opacity 3s ease-out;
 }
 
 .loader-page{
-  animation: opacity-reverse 5s ease-in forwards;
+  animation: opacity-reverse 3s ease-in forwards;
 }
 
 .loader{
-  border: 3px solid transparent;
-  border-top:  3px solid $color-primary;
+  border: 5px solid transparent;
+  border-top:  5px solid $color-primary;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   position:absolute;
   top:0; right: 0; bottom: 0; left: 0;
@@ -30,7 +30,7 @@ a{
   &::after{
     content: "";
     position: absolute;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-radius: 50%;
     border-top: 3px solid $color-secondary;
     top:6px; right: 6px; bottom: 6px; left: 6px;
@@ -39,7 +39,7 @@ a{
   &::before{
     content: "";
     position: absolute;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-radius: 50%;
     border-top: 3px solid $color-tertiary;
     opacity: 0.6;
@@ -194,28 +194,24 @@ a{
       height: 70%;
       z-index: 0;}
     .new{
-        // position: absolute;
+        position: absolute;
         background-color: $color-tertiary;
-        width: 150px;
-        height: 50px;
-      //  justify-self: flex-end;
-        // margin: 10px;
+        width: 195px;
+        height: 65px;
         z-index: 2;
         display: flex;
         justify-content: center;
-        align-content: center;
-        // padding: 10px;
-        transform: translate(410%, -680%);
+        align-items: center;
+        color:darken($color: $color-tertiary, $amount: 50);
+        transform: translateY(-360px);
+         
         @include desktop{
-          transform: translate(110%, -398%);
-        }
-        p{
-          color:darken($color: $color-tertiary, $amount: 50);
-          font-weight: bold
-          font-size 20px;
-          transform: translateY(-40px);
-          
-        }
+         transform:translateY(-180px);
+         width: 120px;
+         height: auto;
+
+        }    
+    }         
     }
     figcaption{
       @include ligne;
@@ -256,15 +252,16 @@ a{
         }
     }
   }
-} 
+
 
  
-.fa-heart:hover::before{
+.fa-heart:hover::after{
   animation: heart;
   animation-timing-function: ease-in-out;
-//   background-color:$color-gradient;
-//   background-clip: txt;
-//   cursor: pointer;
-// transition: color 1s ease-out;
-// font-weight: bold;
+  // color:$color-gradient;
+ background-clip: txt;
+  cursor: pointer;
+color: $color-gradient;
+  transition: color 1s ease-out;
+  font-weight: bold;
 }

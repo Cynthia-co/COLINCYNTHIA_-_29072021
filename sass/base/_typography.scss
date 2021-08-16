@@ -78,7 +78,13 @@ title-menu{
     border-bottom: 2px solid $color-tertiary; 
     
 }
-
+.new{
+    font-weight: bold;
+    font-size: 35px;
+    @include desktop{
+        font-size: 20px;
+    }
+}
 footer{
     color: $color-footer;
 }
