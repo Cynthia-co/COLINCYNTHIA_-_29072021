@@ -512,7 +512,7 @@ a {
   right: 26px;
   bottom: 26px;
   left: 26px;
-  animation: spin 1.5s linear infinite;
+  animation: spin 1.4s linear infinite;
 }
 
 #noustrouver {
@@ -739,14 +739,15 @@ a {
   }
 }
 
-.fa-heart:hover::after {
-  animation: heart;
-  animation-timing-function: ease-in-out;
-  background-clip: text;
-  cursor: pointer;
-  background-color: linear-gradient(#ff79DA, #9356dc);
-  transition: color 1s ease-out;
+.fa-heart {
+  background-color: transparent;
+  transition: color 300ms ease-in;
+}
+.fa-heart:hover {
   font-weight: bold;
+  background-image: linear-gradient(#ff79DA, #9356dc);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 body {
