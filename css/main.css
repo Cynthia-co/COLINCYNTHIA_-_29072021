@@ -272,7 +272,7 @@ footer {
 }
 @keyframes heart {
   0% {
-    background-color: none;
+    background-color: transparent;
   }
   100% {
     color: linear-gradient(#ff79DA, #9356dc);
@@ -742,9 +742,9 @@ a {
 .fa-heart:hover::after {
   animation: heart;
   animation-timing-function: ease-in-out;
-  background-clip: txt;
+  background-clip: text;
   cursor: pointer;
-  color: linear-gradient(#ff79DA, #9356dc);
+  background-color: linear-gradient(#ff79DA, #9356dc);
   transition: color 1s ease-out;
   font-weight: bold;
 }
@@ -1023,7 +1023,7 @@ footer {
 }
 @keyframes heart {
   0% {
-    background-color: none;
+    background-color: transparent;
   }
   100% {
     color: linear-gradient(#ff79DA, #9356dc);
