@@ -474,8 +474,8 @@ a {
 }
 
 .loader {
-  border: 5px solid transparent;
-  border-top: 5px solid #9356dc;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356dc;
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -485,32 +485,32 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  animation: spin 3s linear infinite;
+  animation: spin 1.7s linear infinite;
 }
 .loader::after {
   content: "";
   position: absolute;
-  border: 5px solid transparent;
+  border: 10px solid transparent;
   border-radius: 50%;
-  border-top: 3px solid #ff79DA;
-  top: 6px;
-  right: 6px;
-  bottom: 6px;
-  left: 6px;
-  animation: spin 2.5s linear infinite;
+  border-top: 10px solid #ff79DA;
+  top: 13px;
+  right: 13px;
+  bottom: 13px;
+  left: 13px;
+  animation: spin 1.6s linear infinite;
 }
 .loader::before {
   content: "";
   position: absolute;
-  border: 5px solid transparent;
+  border: 10px solid transparent;
   border-radius: 50%;
-  border-top: 3px solid #99e2d0;
+  border-top: 10px solid #99e2d0;
   opacity: 0.6;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  animation: spin 2s linear infinite;
+  top: 26px;
+  right: 26px;
+  bottom: 26px;
+  left: 26px;
+  animation: spin 1.5s linear infinite;
 }
 
 #noustrouver {
@@ -1107,7 +1107,7 @@ section .ingredients {
   box-shadow: 0px 2px 0px 2px #c3c3c3;
 }
 section .ingredients:hover .ingredients__price {
-  transform: translateX(-130px);
+  transform: translateX(-180px);
 }
 @media screen and (min-width: 1024px) {
   section .ingredients {
@@ -1166,6 +1166,10 @@ section .ingredients__check i {
   opacity: 0;
   transform: rotate(-270deg);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  background-color: #fff;
+  color: #99e2d0;
+  border-radius: 50%;
+  border-color: #99e2d0;
 }
 section .ingredients:hover .ingredients__check {
   background: #9ed;
