@@ -31,6 +31,7 @@ h2 {
 
 p {
   font-size: 35px;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1024px) {
   p {
@@ -72,6 +73,7 @@ h4::after {
 h5, .price {
   font-weight: bold;
   font-size: 35px;
+  text-overflow: ellipsis;
 }
 
 .far {
@@ -780,6 +782,7 @@ h2 {
 
 p {
   font-size: 35px;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1024px) {
   p {
@@ -821,6 +824,7 @@ h4::after {
 h5, .price {
   font-weight: bold;
   font-size: 35px;
+  text-overflow: ellipsis;
 }
 
 .far {
@@ -1131,6 +1135,8 @@ section .ingredients__bottom {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 section .ingredients__delay-1 {
   animation: fadein 200ms both;
@@ -1170,6 +1176,10 @@ section .ingredients__check i {
   color: #99e2d0;
   border-radius: 50%;
   border-color: #99e2d0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
 }
 section .ingredients:hover .ingredients__check {
   background: #9ed;
@@ -1181,6 +1191,7 @@ section .ingredients:hover .ingredients__check i {
 }
 section .ingredients:hover .ingredients__repas {
   width: 80%;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=main.css.map */

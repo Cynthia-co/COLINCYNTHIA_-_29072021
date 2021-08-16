@@ -108,6 +108,8 @@ section {
       &__bottom {
         @include ligne;
         @include center;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
       &__delay-1{
         
@@ -142,6 +144,10 @@ section {
           color: $color-tertiary;
           border-radius: 50%;
           border-color: $color-tertiary;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          font-size: 20px;
         }
       }
         &:hover .ingredients__check{
@@ -155,6 +161,7 @@ section {
         }
         &:hover .ingredients__repas{
           width: 80%;
+          text-overflow: ellipsis;
         }
       }
 

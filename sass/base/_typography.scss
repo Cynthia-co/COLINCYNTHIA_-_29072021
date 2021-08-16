@@ -28,9 +28,9 @@ h2{
 }
 p{
     font-size: 35px;
+    text-overflow: ellipsis;
     @include desktop{
         font-size: 25px;
-      
     }
 }
 
@@ -68,7 +68,7 @@ h4{
 h5, .price{
     font-weight: bold;
     font-size: 35px;
-    
+    text-overflow: ellipsis;
 }
 .far{
     font-size: 3em;
