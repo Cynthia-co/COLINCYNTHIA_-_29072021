@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 200px;
     margin-right: 200px;
@@ -626,7 +626,6 @@ a {
 }
 #noustrouver #explorer {
   background-color: #f2F2F2;
-  font: "Roboto" bold 12px;
   margin-top: 65px;
 }
 @media screen and (min-width: 1024px) {
@@ -832,7 +831,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px ) {
   body {
     margin-left: 200px;
     margin-right: 200px;

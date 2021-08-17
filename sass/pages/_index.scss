@@ -87,7 +87,7 @@ a{
   }
   #explorer {
     background-color:$color-background1;
-    font: $font-h2 ;
+    
     @extend %barre;
     margin-top: 65px;
     @include desktop{
