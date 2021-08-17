@@ -256,7 +256,7 @@ a{
     font-weight: bold;
     background-image: $color-gradient;
     color: transparent;
-    background-clip: text;
+    /*background-clip: text;*/
     -webkit-background-clip: text;
   }
 }
