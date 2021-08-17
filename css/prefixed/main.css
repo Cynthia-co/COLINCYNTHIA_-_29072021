@@ -1253,7 +1253,7 @@ footer {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: :1440px) {
+@media screen and (min-width:1440px) {
   .section .menu {
     display: flex;
     flex-flow: row wrap;
