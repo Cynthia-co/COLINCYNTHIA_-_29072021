@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 200px;
     margin-right: 200px;
@@ -310,6 +310,14 @@ footer {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    color: linear-gradient(#ff79DA, #9356dc);
   }
 }
 header {
@@ -823,7 +831,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 200px;
     margin-right: 200px;
@@ -1133,6 +1141,7 @@ footer {
     transform: translateX(0);
   }
 }
+
 .img-menu {
   position: relative;
   z-index: -1;
