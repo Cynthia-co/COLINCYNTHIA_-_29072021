@@ -5,15 +5,15 @@ body{
     font-family: "Roboto";
     width: 100%;
     @include medium-screen{
-        margin-left: 200px;
-        margin-right: 200px;
-        width: 80%;
-        }
+       margin-left: 200px;
+      margin-right: 200px;
+     width: 80%;
+     }
     @include large{
-        margin-left: 400px;
-        margin-right: 400px;
-        height: 100%;
-        }
+      margin-left: 400px;
+     margin-right: 400px;
+     height: 100%;
+    }
 }
 
 h1{

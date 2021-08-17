@@ -815,6 +815,7 @@ a {
   font-weight: bold;
   background-image: linear-gradient(#ff79DA, #9356dc);
   color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -1217,9 +1218,6 @@ footer {
   border-color: black;
   box-shadow: 0px 2px 0px 2px #c3c3c3;
 }
-.section .ingredients:hover .ingredients__price {
-  transform: translateX(-120px);
-}
 @media screen and (min-width: 1024px) {
   .section .ingredients {
     width: 600px;
@@ -1237,18 +1235,12 @@ footer {
 .section .ingredients h5,
 .section .ingredients p {
   margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .section .ingredients__bottom {
   display: flex;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .section .ingredients__delay-1 {
   animation: fadein 200ms both;
@@ -1305,8 +1297,19 @@ footer {
   transform: rotate(0deg);
 }
 .section .ingredients:hover .ingredients__repas {
-  width: 80%;
+  width: 70%;
+}
+
+.ingredients h5 {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -76,9 +76,8 @@
     margin-right: 10px;
     padding-bottom: 30px;
     position: relative;
-    &:hover .ingredients__price{
-      transform: translateX(-120px);
-    }
+    
+    
     @include desktop{
         width: 600px;
         height: min-content;
@@ -92,15 +91,12 @@
     h5,
     p {
       margin: 0;
-      @include ellipsis;
-      
     }
          
       @include ingredients;
       &__bottom {
         @include ligne;
         @include center;
-       @include ellipsis;
       }
       &__delay-1{
         animation: fadein 200ms both;
@@ -153,12 +149,19 @@
           
         }
         &:hover .ingredients__repas{
-          width: 80%;
-          text-overflow: ellipsis;
+          width: 70%;
         }
+        
       }
-
-
     }
+     .ingredients h5{
+       @include ellipsis;
+      }
+      .desc{
+        @include ellipsis;
+      }
+    
+  
+  
   
 
