@@ -88,5 +88,8 @@
         border-top-left-radius: 50px;
         padding-bottom: 0;
     }
+    @include medium-screen{
+        width: 80%;
+    }
 }
 

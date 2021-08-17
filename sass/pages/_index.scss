@@ -127,6 +127,9 @@ a{
   @include desktop{
     margin: 5px;
   }
+  @include medium-screen{
+    margin: 50px;
+  }
   .fonctionnement-box{
     display: flex;
     flex-direction: column;
@@ -141,6 +144,7 @@ a{
     @extend %box-fonctionnement;
     justify-content: center;
     margin-left: 20px;
+    
     .step{
       @include center;
       justify-content: center;

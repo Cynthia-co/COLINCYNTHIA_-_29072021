@@ -4,16 +4,14 @@ body {
 }
 @media screen and (min-width: ) {
   body {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 180px;
     width: 80%;
   }
 }
 @media screen and (min-width: 2550px) {
   body {
-    margin-left: 400px;
-    margin-right: 400px;
-    height: 100%;
+    margin-left: 270px;
+    width: 80%;
   }
 }
 
@@ -223,6 +221,11 @@ footer {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: ) {
+  .title-restaurant {
+    width: 80%;
   }
 }
 
@@ -480,6 +483,11 @@ footer p .fa-hands-helping {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: ) {
+  .title-restaurant {
+    width: 80%;
+  }
+}
 
 .btn-color {
   width: 750px;
@@ -671,6 +679,11 @@ a {
     margin: 5px;
   }
 }
+@media screen and (min-width: ) {
+  #Fonctionnement {
+    margin: 50px;
+  }
+}
 #Fonctionnement .fonctionnement-box {
   display: flex;
   flex-direction: column;
@@ -815,7 +828,6 @@ a {
   font-weight: bold;
   background-image: linear-gradient(#ff79DA, #9356dc);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -825,16 +837,14 @@ body {
 }
 @media screen and (min-width: ) {
   body {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 180px;
     width: 80%;
   }
 }
 @media screen and (min-width: 2550px) {
   body {
-    margin-left: 400px;
-    margin-right: 400px;
-    height: 100%;
+    margin-left: 270px;
+    width: 80%;
   }
 }
 
@@ -1046,6 +1056,11 @@ footer {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: ) {
+  .title-restaurant {
+    width: 80%;
+  }
+}
 
 .btn-color {
   width: 750px;
@@ -1228,7 +1243,7 @@ footer {
 }
 @media screen and (min-width: ) {
   .section .ingredients {
-    width: 880px;
+    width: 600px;
     height: 80px;
   }
 }
