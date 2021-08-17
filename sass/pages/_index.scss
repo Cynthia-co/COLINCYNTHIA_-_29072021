@@ -133,6 +133,7 @@ a{
     flex-direction: column;
     @include desktop{
       flex-flow: row wrap;
+      
     }
   }
   
@@ -155,13 +156,13 @@ a{
         width: 40px;
         height: 40px;
         font-size: 20px;
-        transform:translateX(-40px);
+        transform:translateX(-25px);
       }     
   }
   .step2{
         transform: translateX(-170px);
         @include desktop{
-          transform:translateX(-45px);
+          transform:translateX(-30px);
         }
       }
   .fas{
