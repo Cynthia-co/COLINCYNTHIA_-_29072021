@@ -74,10 +74,9 @@ section {
     padding: 15px;
     margin-right: 10px;
     padding-bottom: 30px;
-    overflow: hidden;
     position: relative;
     &:hover .ingredients__price{
-      transform: translateX(-180px);
+      transform: translateX(-120px);
     }
     @include desktop{
         width: 600px;
@@ -92,18 +91,16 @@ section {
     h5,
     p {
       margin: 0;
-      text-overflow: ellipsis;
+      @include ellipsis;
     }
          
       @include ingredients;
       &__bottom {
         @include ligne;
         @include center;
-        text-overflow: ellipsis;
-        overflow: hidden;
+       @include ellipsis;
       }
       &__delay-1{
-        
         animation: fadein 200ms both;
         animation-timing-function:ease-in-out; 
         animation-delay: 0s;
@@ -126,6 +123,8 @@ section {
         justify-content : center;
         align-items : center;
         align-content : center;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
         i {
           display : block;
           opacity : 0;

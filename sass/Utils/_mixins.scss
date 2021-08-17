@@ -70,5 +70,10 @@
 @mixin figcaption-restau {
   @include colonne;
   font-size: 1em;
- 
+}
+
+@mixin ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
