@@ -137,7 +137,7 @@ a{
     }
   }
   
-  button {
+  .fonctionnement-button {
     @include center;
     @extend %box-fonctionnement;
     justify-content: center;
