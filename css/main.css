@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 200px;
     margin-right: 200px;
@@ -823,7 +823,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width:1440px) {
   body {
     margin-left: 200px;
     margin-right: 200px;
@@ -1182,7 +1182,7 @@ footer {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width:1440px) {
   .section .menu {
     display: flex;
     flex-flow: row wrap;
@@ -1191,7 +1191,7 @@ footer {
 .section .menu__part {
   width: fit-content;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px)  {
   .section .menu__part {
     display: flex;
     flex-flow: row wrap;
@@ -1230,7 +1230,7 @@ footer {
     padding-bottom: 15px;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   .section .ingredients {
     width: 880px;
     height: 80px;
