@@ -25,8 +25,11 @@
     font-size: $font-size;
     z-index: 0;
     @include desktop{
-        width: 580px;
-        height: 100px;
+        width: 420px;
+        height: 80px;
+        margin: 15px;
+        flex-flow: row;
+        font-size: 25px;
     }
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35);
@@ -56,7 +59,7 @@
     @include desktop{
         width: 380px;
         height: 310px;
-        
+        margin: 50px;
         object-fit: cover;
         
     }

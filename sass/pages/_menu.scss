@@ -44,6 +44,7 @@ section {
   @include desktop{
     margin-top: 66px;
     padding-top: 20px;
+    padding-bottom: 60px;
   }  
   .menu{
     @include medium-screen{
@@ -92,6 +93,7 @@ section {
     p {
       margin: 0;
       @include ellipsis;
+      
     }
          
       @include ingredients;

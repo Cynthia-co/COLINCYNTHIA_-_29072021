@@ -57,7 +57,7 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -96,6 +96,11 @@ h5, .price {
   font-weight: bold;
   font-size: 35px;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 1024px) {
+  h5, .price {
+    font-size: 25px;
+  }
 }
 
 .far {
@@ -149,8 +154,11 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 580px;
-    height: 100px;
+    width: 420px;
+    height: 80px;
+    margin: 15px;
+    flex-flow: row;
+    font-size: 25px;
   }
 }
 #Fonctionnement button:hover {
@@ -184,6 +192,7 @@ footer {
   #Restaurants figure {
     width: 380px;
     height: 310px;
+    margin: 50px;
     object-fit: cover;
   }
 }
@@ -408,8 +417,11 @@ footer p .fa-hands-helping {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 580px;
-    height: 100px;
+    width: 420px;
+    height: 80px;
+    margin: 15px;
+    flex-flow: row;
+    font-size: 25px;
   }
 }
 #Fonctionnement button:hover {
@@ -443,6 +455,7 @@ footer p .fa-hands-helping {
   #Restaurants figure {
     width: 380px;
     height: 310px;
+    margin: 50px;
     object-fit: cover;
   }
 }
@@ -562,10 +575,10 @@ a {
   border-radius: 50%;
   border-top: 10px solid #99e2d0;
   opacity: 0.6;
-  top: 26px;
-  right: 26px;
-  bottom: 26px;
-  left: 26px;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
   animation: spin 1.4s linear infinite;
 }
 
@@ -598,13 +611,12 @@ a {
     box-shadow: 0px 0px 3px 3Px #91e0cc;
     border-radius: 50px;
     font-size: 20px;
-    align-content: center;
-    text-align: center;
     transform: translateY(-120%);
     margin-left: 40px;
   }
   #noustrouver #localisation p {
     font-size: 20px;
+    align-self: center;
   }
 }
 #noustrouver #localisation .fas {
@@ -706,7 +718,7 @@ a {
     width: 40px;
     height: 40px;
     font-size: 20px;
-    transform: translateX(-80px);
+    transform: translateX(-40px);
   }
 }
 #Fonctionnement button .step2 {
@@ -714,7 +726,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button .step2 {
-    transform: translateX(-90px);
+    transform: translateX(-45px);
   }
 }
 #Fonctionnement button .fas {
@@ -875,7 +887,7 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -914,6 +926,11 @@ h5, .price {
   font-weight: bold;
   font-size: 35px;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 1024px) {
+  h5, .price {
+    font-size: 25px;
+  }
 }
 
 .far {
@@ -967,8 +984,11 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   #Fonctionnement button {
-    width: 580px;
-    height: 100px;
+    width: 420px;
+    height: 80px;
+    margin: 15px;
+    flex-flow: row;
+    font-size: 25px;
   }
 }
 #Fonctionnement button:hover {
@@ -1002,6 +1022,7 @@ footer {
   #Restaurants figure {
     width: 380px;
     height: 310px;
+    margin: 50px;
     object-fit: cover;
   }
 }
@@ -1175,6 +1196,7 @@ section {
   section {
     margin-top: 66px;
     padding-top: 20px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: ) {

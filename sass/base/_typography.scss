@@ -47,7 +47,7 @@ h3{
     font-size: 45px;
     margin: 3px;
     @include desktop{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 figcaption{
@@ -82,6 +82,9 @@ h5, .price{
     font-weight: bold;
     font-size: 35px;
     text-overflow: ellipsis;
+    @include desktop{
+        font-size: 25px;
+    }
 }
 .far{
     font-size: 3em;
