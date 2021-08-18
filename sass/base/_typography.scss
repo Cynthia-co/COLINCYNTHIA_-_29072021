@@ -17,6 +17,7 @@ body{
 h1{
     font-family: "Shrikhand";
     font-size: 72px;
+    text-align: center;
     @include desktop{
         font-size: 50px;
     }

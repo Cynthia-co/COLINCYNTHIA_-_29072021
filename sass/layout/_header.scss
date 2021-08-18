@@ -5,8 +5,11 @@ header {
   background-color: white;
   border-bottom: 2px;
   width: 100%;
+  // h1{
+  //   text-align: center;
+  //   margin-left: 45%;
+  // }
   @include desktop{
-    
     height: 80px;
   }
  .header__menu {
@@ -19,19 +22,7 @@ header {
       justify-content: center;
     }
   }
-  figure {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 30px;
-    img {
-      width: 450px;
-      height: auto;
-      @include desktop{
-        width: 200px;
-      }
-    }
-  }
+
   .fas {
     font-size: 50px;
     @include desktop{
