@@ -80,6 +80,7 @@
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
     padding-bottom: 10px;
+    
     @include desktop{
         display: flex;
         justify-content: space-around;

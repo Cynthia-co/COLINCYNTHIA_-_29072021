@@ -322,7 +322,7 @@ header {
 }
 @media screen and (min-width: 1024px) {
   header {
-    height: 80px;
+    height: 110px;
   }
 }
 header .header__menu {
@@ -343,6 +343,7 @@ header .fas {
 @media screen and (min-width: 1024px) {
   header .fas {
     font-size: 25px;
+    margin-right: 50px;
   }
 }
 
