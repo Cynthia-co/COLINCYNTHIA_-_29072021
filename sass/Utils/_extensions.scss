@@ -31,6 +31,9 @@
         flex-flow: row;
         font-size: 25px;
     }
+    @include large{
+        height: 130px;
+    }
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35);
         cursor: pointer;
@@ -71,6 +74,9 @@
     @include desktop{
         height: 190px;
     }
+    @include large{
+        transform: translateY(40px);
+      }
 }
 
 %title-restaurant{
@@ -91,6 +97,9 @@
     }
     @include medium-screen{
         width: 80%;
+    }
+    @include large{
+        transform: translateY(195px);
     }
 }
 

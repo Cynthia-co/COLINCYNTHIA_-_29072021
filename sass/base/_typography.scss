@@ -21,6 +21,9 @@ h1{
     @include desktop{
         font-size: 50px;
     }
+    @include large{
+        margin: 60px;
+    }
 }
 
 h2{
@@ -31,6 +34,9 @@ h2{
         font-size: 35px;
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+    @include large{
+        margin: 60px;
     }
 }
 p{
@@ -63,6 +69,9 @@ h4{
     margin-left: 10px;
     @include desktop{
         font-size: 30px;
+    }
+    @include large{
+        margin-top: 40px;
     }
     &::after{
         content:"";

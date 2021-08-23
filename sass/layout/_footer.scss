@@ -8,6 +8,9 @@ footer{
     background-color: $footer-backgroundcolor;
     justify-content: center;
     margin: 5px;
+    @include large{
+        height: 265px;
+    }
     h1{
         font-size: 50px;
         margin:5px;

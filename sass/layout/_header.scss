@@ -5,13 +5,11 @@ header {
   background-color: white;
   border-bottom: 2px;
   width: 100%;
-  // h1{
-  //   text-align: center;
-  //   margin-left: 45%;
-  // }
+  
   @include desktop{
     height: 110px;
   }
+  
  .header__menu {
     display: flex;
     justify-content: space-around;

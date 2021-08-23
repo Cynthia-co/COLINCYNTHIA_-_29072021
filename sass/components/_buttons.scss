@@ -1,5 +1,4 @@
-@import "../Utils/variables";
-@import "../Utils/mixins";
+
 
 .btn-color{
     width: 750px;
@@ -24,15 +23,21 @@
         font-size: 35px;
         align-self: center;
     }
+    @include large{
+        margin: 60px;
+    }
 }
 
 .btn-color-command{
     margin:100px;
-        @include desktop{
+    @include desktop{
         display: flex;
         justify-items: center;
-        margin-left: 30%;
+        margin-left: 20%;
         background-color: $color-background1;
+    }
+    @include large{
+        transform: translate(320px, 180px);
     }
 }
 

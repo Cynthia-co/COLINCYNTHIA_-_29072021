@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width:1440px) {
   body {
     margin-left: 180px;
     width: 80%;
@@ -25,6 +25,11 @@ h1 {
     font-size: 50px;
   }
 }
+@media screen and (min-width: 2550px) {
+  h1 {
+    margin: 60px;
+  }
+}
 
 h2 {
   margin-top: 20px;
@@ -36,6 +41,11 @@ h2 {
     font-size: 35px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  h2 {
+    margin: 60px;
   }
 }
 
@@ -75,6 +85,11 @@ h4 {
 @media screen and (min-width: 1024px) {
   h4 {
     font-size: 30px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  h4 {
+    margin-top: 40px;
   }
 }
 h4::after {
@@ -159,6 +174,11 @@ footer {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 2550px) {
+  #Fonctionnement .fonctionnement-button {
+    height: 130px;
+  }
+}
 #Fonctionnement .fonctionnement-button:hover {
   background-color: #f2eafb;
   cursor: pointer;
@@ -205,6 +225,11 @@ footer {
     height: 190px;
   }
 }
+@media screen and (min-width: 2550px) {
+  .img-menu {
+    transform: translateY(40px);
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -224,9 +249,14 @@ footer {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: :1440px ) {
   .title-restaurant {
     width: 80%;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .title-restaurant {
+    transform: translateY(195px);
   }
 }
 
@@ -256,6 +286,11 @@ footer {
     align-self: center;
   }
 }
+@media screen and (min-width: 2550px) {
+  .btn-color {
+    margin: 60px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -264,8 +299,13 @@ footer {
   .btn-color-command {
     display: flex;
     justify-items: center;
-    margin-left: 30%;
+    margin-left: 20%;
     background-color: #f2F2F2;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .btn-color-command {
+    transform: translate(320px, 180px);
   }
 }
 
@@ -355,6 +395,11 @@ footer {
   justify-content: center;
   margin: 5px;
 }
+@media screen and (min-width: 2550px) {
+  footer {
+    height: 265px;
+  }
+}
 footer h1 {
   font-size: 50px;
   margin: 5px;
@@ -405,6 +450,11 @@ footer p .fa-hands-helping {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 2550px) {
+  #Fonctionnement .fonctionnement-button {
+    height: 130px;
+  }
+}
 #Fonctionnement .fonctionnement-button:hover {
   background-color: #f2eafb;
   cursor: pointer;
@@ -451,6 +501,11 @@ footer p .fa-hands-helping {
     height: 190px;
   }
 }
+@media screen and (min-width: 2550px) {
+  .img-menu {
+    transform: translateY(40px);
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -470,9 +525,14 @@ footer p .fa-hands-helping {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width:1440px ) {
   .title-restaurant {
     width: 80%;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .title-restaurant {
+    transform: translateY(195px);
   }
 }
 
@@ -502,6 +562,11 @@ footer p .fa-hands-helping {
     align-self: center;
   }
 }
+@media screen and (min-width: 2550px) {
+  .btn-color {
+    margin: 60px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -510,8 +575,13 @@ footer p .fa-hands-helping {
   .btn-color-command {
     display: flex;
     justify-items: center;
-    margin-left: 30%;
+    margin-left: 20%;
     background-color: #f2F2F2;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .btn-color-command {
+    transform: translate(320px, 180px);
   }
 }
 
@@ -577,6 +647,11 @@ a {
   #noustrouver {
     background-color: #f3f3f3;
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  #noustrouver {
+    height: 500px;
   }
 }
 #noustrouver p {
@@ -666,9 +741,14 @@ a {
     margin: 5px;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width:1440px) {
   #Fonctionnement {
     margin: 50px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  #Fonctionnement {
+    height: 500px;
   }
 }
 #Fonctionnement .fonctionnement-box {
@@ -734,6 +814,11 @@ a {
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 30px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  #Restaurants .restaurants {
+    margin-bottom: 60px;
   }
 }
 #Restaurants figure:hover {
@@ -822,7 +907,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: :1440px) {
   body {
     margin-left: 180px;
     width: 80%;
@@ -845,6 +930,11 @@ h1 {
     font-size: 50px;
   }
 }
+@media screen and (min-width: 2550px) {
+  h1 {
+    margin: 60px;
+  }
+}
 
 h2 {
   margin-top: 20px;
@@ -856,6 +946,11 @@ h2 {
     font-size: 35px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  h2 {
+    margin: 60px;
   }
 }
 
@@ -895,6 +990,11 @@ h4 {
 @media screen and (min-width: 1024px) {
   h4 {
     font-size: 30px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  h4 {
+    margin-top: 40px;
   }
 }
 h4::after {
@@ -979,6 +1079,11 @@ footer {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 2550px) {
+  #Fonctionnement .fonctionnement-button {
+    height: 130px;
+  }
+}
 #Fonctionnement .fonctionnement-button:hover {
   background-color: #f2eafb;
   cursor: pointer;
@@ -1025,6 +1130,11 @@ footer {
     height: 190px;
   }
 }
+@media screen and (min-width: 2550px) {
+  .img-menu {
+    transform: translateY(40px);
+  }
+}
 
 .title-restaurant {
   background-color: #e9e9e9;
@@ -1044,9 +1154,14 @@ footer {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   .title-restaurant {
     width: 80%;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .title-restaurant {
+    transform: translateY(195px);
   }
 }
 
@@ -1076,6 +1191,11 @@ footer {
     align-self: center;
   }
 }
+@media screen and (min-width: 2550px) {
+  .btn-color {
+    margin: 60px;
+  }
+}
 
 .btn-color-command {
   margin: 100px;
@@ -1084,8 +1204,13 @@ footer {
   .btn-color-command {
     display: flex;
     justify-items: center;
-    margin-left: 30%;
+    margin-left: 20%;
     background-color: #f2F2F2;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .btn-color-command {
+    transform: translate(320px, 180px);
   }
 }
 
@@ -1187,7 +1312,12 @@ footer {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 2550px) {
+  .section {
+    height: 1350px;
+  }
+}
+@media screen and (min-width:1440px ) {
   .section .menu {
     display: flex;
     flex-flow: row wrap;
@@ -1200,9 +1330,16 @@ footer {
   .section .menu__part {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
   }
   .section .menu__part h4 {
     width: 100%;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .section .menu__part {
+    transform: translateY(130px);
+    margin-bottom: 50px;
   }
 }
 .section .ingredients {

@@ -56,6 +56,9 @@ a{
    background-color: lighten($color: $color-background1, $amount: 0.5);
    margin-top: 20px;
  }
+ @include large{
+   height: 500px;
+ }
   p{
     font-size: 40px;
   }
@@ -130,12 +133,14 @@ a{
   @include medium-screen{
     margin: 50px;
   }
+  @include large{
+    height: 500px;
+  }
   .fonctionnement-box{
     display: flex;
     flex-direction: column;
     @include desktop{
       flex-flow: row wrap;
-      
     }
   }
   
@@ -185,6 +190,9 @@ a{
        flex-flow:row wrap;
        justify-content: space-around;
        margin:30px;
+     }
+     @include large{
+       margin-bottom: 60px;
      }
    }
   figure{

@@ -10,6 +10,7 @@
   @extend %img-menu;
   position: relative;
   z-index: -1;
+  
 }
 
 .btn-color {
@@ -49,6 +50,9 @@
     padding-top: 20px;
     padding-bottom: 60px;
   }  
+  @include large{
+    height: 1350px;
+  }
   .menu{
     @include medium-screen{
       display: flex;
@@ -59,9 +63,14 @@
     @include desktop{
       display: flex;
       flex-flow: row wrap;
+      justify-content: center;
       h4{
         width: 100%;
       } 
+    }
+    @include large{
+      transform: translateY(130px);
+      margin-bottom: 50px;
     }
     }
   }
