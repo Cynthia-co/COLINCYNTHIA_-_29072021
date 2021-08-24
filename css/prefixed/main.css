@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width:1440px ) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 180px;
     width: 80%;
