@@ -1,11 +1,3 @@
-@import "../base/typography";
-@import "../Utils/mixins";
-@import "../Utils/variables";
-@import "../Utils/extensions";
-@import "../components/buttons";
-@import "../components/keyframes";
-
-
 .img-menu {
   @extend %img-menu;
   position: relative;
@@ -69,7 +61,7 @@
       } 
     }
     @include large{
-      transform: translateY(130px);
+      transform: translateY(70px);
       margin-bottom: 50px;
     }
     }
