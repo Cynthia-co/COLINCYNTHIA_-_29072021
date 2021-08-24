@@ -101,7 +101,7 @@ h4::after {
   display: block;
   padding-top: 3px;
 }
-@media screen and (: 1024px) {
+@media screen and (min-width: 1024px) {
   h4::after {
     width: 84px;
   }
