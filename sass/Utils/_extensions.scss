@@ -30,6 +30,7 @@
     }
     @include large{
         height: 130px;
+        width: 30%;
     }
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35);

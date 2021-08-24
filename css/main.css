@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-@media screen and (min-width: px) {
+@media screen and (min-width: 1440px) {
   body {
     margin-left: 180px;
     width: 80%;
@@ -180,6 +180,7 @@ footer h6 {
 @media screen and (min-width: 2550px) {
   #Fonctionnement .fonctionnement-button {
     height: 130px;
+    width: 30%;
   }
 }
 #Fonctionnement .fonctionnement-button:hover {
@@ -589,8 +590,8 @@ a {
 @media screen and (min-width: 2550px) {
   #Fonctionnement {
     height: 500px;
-    padding-bottom: 0px;
-    padding-top: 50px;
+    padding-bottom: 58px;
+    padding-top: 182px;
   }
 }
 #Fonctionnement .fonctionnement-box {
@@ -634,6 +635,11 @@ a {
     transform: translateX(-165px);
   }
 }
+@media screen and (min-width: 1440px) {
+  #Fonctionnement .fonctionnement-button .step {
+    transform: translateX(-185px);
+  }
+}
 @media screen and (min-width: 2550px) {
   #Fonctionnement .fonctionnement-button .step {
     transform: translateX(-85px);
@@ -645,6 +651,11 @@ a {
 @media screen and (min-width: 1024px) {
   #Fonctionnement .fonctionnement-button .step2 {
     transform: translateX(-175px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  #Fonctionnement .fonctionnement-button .step2 {
+    transform: translateX(-195px);
   }
 }
 @media screen and (min-width: 2550px) {
