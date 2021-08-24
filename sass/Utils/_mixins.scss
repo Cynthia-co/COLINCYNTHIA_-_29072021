@@ -1,6 +1,5 @@
 @import "../Utils/variables";
 
-
 @mixin tablet {
   @media screen and (min-width:map-get($breakpoints, tablet)){
     @content;
@@ -18,8 +17,8 @@
 }
 
 @mixin medium-screen {
-  @media screen and (min-width:map-get($breakpoints, medium)) {
-    @content;
+   @media screen and (min-width:map-get($breakpoints, medium-screen)) {
+       @content;
   }
 }
 
@@ -62,7 +61,7 @@
 }
 
 @mixin tranform-step {
-  transform: translateX(-155px);
+  transform: translateX(-115px);
   @include desktop{
      transform: translateX(-80px);
   }

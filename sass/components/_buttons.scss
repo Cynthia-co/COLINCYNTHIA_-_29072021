@@ -1,7 +1,7 @@
 
 
 .btn-color{
-    width: 750px;
+    width: 680px;
     height: 130px;
     background: $color-gradient;
     border-radius: 100px;
@@ -11,6 +11,7 @@
     color: $color-footer;
     margin-bottom: 30px;
     @include box-shadow;
+    border-color: transparent;
     &:hover{
        filter:opacity(80%);
        transition: opacity 250ms;
@@ -30,6 +31,8 @@
 
 .btn-color-command{
     margin:100px;
+    width: 500px;
+    transform: translateX(150px);
     @include desktop{
         display: flex;
         justify-items: center;
