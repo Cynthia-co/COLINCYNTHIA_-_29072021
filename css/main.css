@@ -249,7 +249,7 @@ footer {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: 1440px ) {
+@media screen and (min-width: 1440px) {
   .title-restaurant {
     width: 80%;
   }
@@ -525,7 +525,7 @@ footer p .fa-hands-helping {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: 1440px ) {
+@media screen and (min-width: 1440px) {
   .title-restaurant {
     width: 80%;
   }
@@ -1317,7 +1317,7 @@ footer {
     height: 1350px;
   }
 }
-@media screen and (min-width: 1440px ) {
+@media screen and (min-width: 1440px) {
   .section .menu {
     display: flex;
     flex-flow: row wrap;
@@ -1370,7 +1370,7 @@ footer {
     padding-bottom: 15px;
   }
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 1440px) {
   .section .ingredients {
     width: 600px;
     height: 80px;
