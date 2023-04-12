@@ -12,22 +12,34 @@
 }
 
 %box-fonctionnement{
-    width: 850px;
-    height: 185px;
+    width: 920px;
+    height: 150px;
     background-color: $color-background2;
-    border-radius: 50px;
+    border-radius: 30px;
     border: transparent;
+    // width: 850px;
+    // height: 185px;
+    // background-color: $color-background2;
+    // border-radius: 50px;
+    // border: transparent;
     @include box-shadow;
     margin: 30px;
     font-size: $font-size;
     z-index: 0;
     @include desktop{
-        width: 76%;
-        height: 110px;
+        width: 30%;
+        height: 80px;
         margin: 15px;
         flex-flow: row;
         font-size: 25px;
     }
+    // @include desktop{
+    //     width: 76%;
+    //     height: 110px;
+    //     margin: 15px;
+    //     flex-flow: row;
+    //     font-size: 25px;
+    // }
     @include large{
         height: 130px;
         width: 30%;
